@@ -214,7 +214,7 @@ public class BelajarBaca extends Activity {
 
     public void Next() {
         a++;
-        if (a > 5) {
+        if (a > 4) {
             a = 0;
         }
         imview.setBackgroundResource(lzm.gambarsaya2[a]);
@@ -227,7 +227,7 @@ public class BelajarBaca extends Activity {
 
         a--;
         if (a < 0) {
-            a = 5;
+            a = 4;
         }
         imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);

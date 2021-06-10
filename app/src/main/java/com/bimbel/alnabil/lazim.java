@@ -170,6 +170,8 @@ public class lazim {
     //musik2
     public int[] musiksaya2 = {
             R.raw.nada_a,
+            R.raw.nada_i,
+            R.raw.nada_u,
             /*R.raw.nada_b,
             R.raw.nada_c,
             R.raw.nada_d, */
@@ -177,7 +179,7 @@ public class lazim {
           /*  R.raw.nada_f,
             R.raw.nada_g,
             R.raw.nada_h,*/
-            R.raw.nada_i,
+
           /*  R.raw.nada_j,
             R.raw.nada_k,
             R.raw.nada_l,
@@ -189,7 +191,7 @@ public class lazim {
             R.raw.nada_r,
             R.raw.nada_s,
             R.raw.nada_t, */
-            R.raw.nada_u,
+
           /*  R.raw.nada_v,
             R.raw.nada_w,
             R.raw.nada_x,
@@ -251,7 +253,7 @@ public class lazim {
             /*R.drawable.huruf_b,
             R.drawable.huruf_c,
            R.drawable.huruf_d, */
-            R.drawable.huruf_e,
+
            /*  R.drawable.huruf_f,
             R.drawable.huruf_g,
             R.drawable.huruf_h,*/
@@ -261,13 +263,16 @@ public class lazim {
             R.drawable.huruf_l,
             R.drawable.huruf_m,
             R.drawable.huruf_n, */
+            R.drawable.huruf_u,
+            R.drawable.huruf_e,
             R.drawable.huruf_o,
+
          /*   R.drawable.huruf_p,
             R.drawable.huruf_q,
             R.drawable.huruf_r,
             R.drawable.huruf_s,
             R.drawable.huruf_t, */
-            R.drawable.huruf_u,
+
          /*    R.drawable.huruf_v,
             R.drawable.huruf_w,
             R.drawable.huruf_x,
