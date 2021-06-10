@@ -170,33 +170,33 @@ public class lazim {
     //musik2
     public int[] musiksaya2 = {
             R.raw.nada_a,
-            R.raw.nada_b,
+            /*R.raw.nada_b,
             R.raw.nada_c,
-            R.raw.nada_d,
+            R.raw.nada_d, */
             R.raw.nada_e,
-            R.raw.nada_f,
+          /*  R.raw.nada_f,
             R.raw.nada_g,
-            R.raw.nada_h,
+            R.raw.nada_h,*/
             R.raw.nada_i,
-            R.raw.nada_j,
+          /*  R.raw.nada_j,
             R.raw.nada_k,
             R.raw.nada_l,
             R.raw.nada_m,
-            R.raw.nada_n,
+            R.raw.nada_n,*/
             R.raw.nada_o,
-            R.raw.nada_p,
+          /*  R.raw.nada_p,
             R.raw.nada_q,
             R.raw.nada_r,
             R.raw.nada_s,
-            R.raw.nada_t,
+            R.raw.nada_t, */
             R.raw.nada_u,
-            R.raw.nada_v,
+          /*  R.raw.nada_v,
             R.raw.nada_w,
             R.raw.nada_x,
             R.raw.nada_y,
             R.raw.nada_z,
             R.raw.tr,
-            R.raw.fa
+            R.raw.fa */
     };
 
     //suara membaca hewan
@@ -247,8 +247,8 @@ public class lazim {
             R.raw.transportasi_n
     };
     public int[] gambaralfabet = {
-           /* R.drawable.huruf_a,
-            R.drawable.huruf_b,
+           R.drawable.huruf_a,
+            /*R.drawable.huruf_b,
             R.drawable.huruf_c,
            R.drawable.huruf_d, */
             R.drawable.huruf_e,
@@ -260,9 +260,9 @@ public class lazim {
             R.drawable.huruf_k,
             R.drawable.huruf_l,
             R.drawable.huruf_m,
-            R.drawable.huruf_n,
+            R.drawable.huruf_n, */
             R.drawable.huruf_o,
-            R.drawable.huruf_p,
+         /*   R.drawable.huruf_p,
             R.drawable.huruf_q,
             R.drawable.huruf_r,
             R.drawable.huruf_s,
