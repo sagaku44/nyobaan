@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/ry"
+    android:background="@drawable/bg2"
     android:id="@+id/lysantunush"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
@@ -19,20 +19,19 @@
         <ImageView
             android:id="@+id/imvwsan"
             android:layout_alignParentTop="true"
-            android:background="@drawable/imnumber20"
+
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_marginBottom="10px"
-            android:layout_height="250dp"></ImageView>
+            android:layout_height="wrap_content"></ImageView>
 
         <ImageButton
-            android:background="@drawable/number6"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:background="@drawable/huruf_a"
+            android:layout_margin="@dimen/_10sdp"
             android:id="@+id/imbtsan"
-            android:layout_height="fill_parent"
-            android:layout_width="253dp"></ImageButton>
+            android:layout_height="@dimen/_150sdp"
+            android:layout_width="@dimen/_150sdp"></ImageButton>
     </LinearLayout>
 
     <LinearLayout
