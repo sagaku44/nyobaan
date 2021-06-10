@@ -12,16 +12,19 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/_20sdp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        android:onClick="BelajarBaca"
-        android:background="@drawable/btn1"
-        android:layout_margin="@dimen/_10sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/btn1"
+            android:onClick="BelajarBaca" />
 
     <Button
         android:layout_width="wrap_content"
