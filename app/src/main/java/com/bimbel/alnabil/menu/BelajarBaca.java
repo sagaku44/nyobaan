@@ -80,7 +80,7 @@ public class BelajarBaca extends Activity {
         halighan = (ImageButton) findViewById(R.id.bt1);
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
-        menu = (ImageButton) findViewById(R.id.bt4);
+        //menu = (ImageButton) findViewById(R.id.bt4);
         home = (ImageButton) findViewById(R.id.bt5);
         halighan.setMaxWidth(btnWidth-5);
 
@@ -89,7 +89,7 @@ public class BelajarBaca extends Activity {
         kiyinki.setLayoutParams(mParam);
         //menu.setLayoutParams(mParam);
 
-        imview = (ImageView) findViewById(R.id.imvwsan);
+        //imview = (ImageView) findViewById(R.id.imvwsan);
 //        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
         mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
 //        imview.setLayoutParams(mParam);

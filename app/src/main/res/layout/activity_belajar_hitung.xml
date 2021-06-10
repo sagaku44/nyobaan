@@ -1,103 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg2"
     android:id="@+id/lysantunush"
-    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/ry">
+    android:layout_width="fill_parent"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/scr_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@+id/lykontrol"
         android:layout_alignParentTop="true"
-        android:baselineAligned="false"
+        android:layout_above="@+id/lykontrol"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="40dp">
+        android:padding="20px">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imvwsan"
-            android:layout_width="fill_parent"
-            android:layout_height="250dp"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="10px"
+
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/imnumber20"></ImageView>
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_height="wrap_content"></ImageView>-->
 
         <ImageButton
+            android:background="@drawable/number1"
+            android:layout_margin="@dimen/_10sdp"
             android:id="@+id/imbtsan"
-            android:layout_width="166dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/number6"></ImageButton>
-
-        <LinearLayout
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true">
-
-
-            <ImageButton
-                android:id="@+id/bt2"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left|start|end"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="0.14"
-                android:background="@drawable/arrowleft" />
-
-            <ImageButton
-                android:id="@+id/bt3"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right|start|end"
-                android:layout_marginLeft="190dp"
-                android:background="@drawable/arrowright"
-                android:paddingRight="0dp"
-                android:textStyle="normal|bold|italic" />
-        </LinearLayout>
-
+            android:layout_height="@dimen/_200sdp"
+            android:layout_width="@dimen/_150sdp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lykontrol"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_bg1"
-        android:gravity="fill_horizontal"
-        android:paddingBottom="2dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-       >
+        android:background="@drawable/button_bg1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <ImageButton
+            android:id="@+id/bt5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/home"
+            android:background="@drawable/button_gradient_bg" />
+
+        <ImageButton
+            android:id="@+id/bt2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/kiri2"
+            android:background="@drawable/button_gradient_bg"/>
+
+        <ImageButton
+            android:id="@+id/bt3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/kanan2"
+            android:background="@drawable/button_gradient_bg"/>
 
         <ImageButton
             android:id="@+id/bt1"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:background="@drawable/reloadicon"
-            android:layout_weight="0.53" />
-
-        <ImageButton
-            android:id="@+id/button25"
-            android:onClick="keluar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/btnrumah"
-            android:layout_weight="0.53" />
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/btnrandom"
+            android:background="@drawable/button_gradient_bg" />
 
-        <ImageButton
+        <!--<ImageButton
             android:id="@+id/bt4"
-            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:background="@drawable/btnbisu"
-            android:layout_weight="0.53"/>
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"/>-->
 
     </LinearLayout>
+
 </RelativeLayout>
