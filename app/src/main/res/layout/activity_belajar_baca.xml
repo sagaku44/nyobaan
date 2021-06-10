@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:padding="20px">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imvwsan"
             android:layout_alignParentTop="true"
 
@@ -24,63 +24,64 @@
             android:layout_marginRight="30dp"
             android:layout_width="wrap_content"
             android:layout_marginBottom="10px"
-            android:layout_height="wrap_content"></ImageView>
+            android:layout_height="wrap_content"></ImageView>-->
 
         <ImageButton
             android:background="@drawable/huruf_a"
             android:layout_margin="@dimen/_10sdp"
             android:id="@+id/imbtsan"
-            android:layout_height="@dimen/_150sdp"
+            android:layout_height="@dimen/_200sdp"
             android:layout_width="@dimen/_150sdp"></ImageButton>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lykontrol"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_bg1"
-        android:gravity="fill_horizontal|center"
+        android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="2dp">
 
         <ImageButton
-            android:id="@+id/bt1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp"
-            android:src="@drawable/btnrandom"
+            android:id="@+id/bt5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/home"
             android:background="@drawable/button_gradient_bg" />
 
         <ImageButton
             android:id="@+id/bt2"
-            android:layout_height="100dp"
-            android:layout_width="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
             android:src="@drawable/kiri2"
             android:background="@drawable/button_gradient_bg"/>
 
         <ImageButton
             android:id="@+id/bt3"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="100dp"
-            android:layout_width="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
             android:src="@drawable/kanan2"
             android:background="@drawable/button_gradient_bg"/>
 
         <ImageButton
+            android:id="@+id/bt1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/btnrandom"
+            android:background="@drawable/button_gradient_bg" />
+
+        <!--<ImageButton
             android:id="@+id/bt4"
             android:layout_gravity="center_horizontal"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="100dp"
-            android:layout_marginRight="10dp"
-
-            android:background="@drawable/button_gradient_bg" />
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"/>-->
 
     </LinearLayout>
 

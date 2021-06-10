@@ -18,6 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.bimbel.alnabil.MainActivity;
+import com.bimbel.alnabil.MenuAwal;
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
 
@@ -33,6 +35,7 @@ public class BelajarBaca extends Activity {
     private ImageButton aldinqi;
     private ImageButton kiyinki;
     private ImageButton menu;
+    private ImageButton home;
     private MediaPlayer mMediaPlayer;
     private boolean sound = true;
     private int xTouch = 0, xClickOffset = 0, xOffset = 0;
@@ -75,25 +78,35 @@ public class BelajarBaca extends Activity {
         mParam.leftMargin=5;
         mParam.rightMargin=5;
         halighan = (ImageButton) findViewById(R.id.bt1);
-
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
         menu = (ImageButton) findViewById(R.id.bt4);
+        home = (ImageButton) findViewById(R.id.bt5);
         halighan.setMaxWidth(btnWidth-5);
 
         halighan.setLayoutParams(mParam);
         aldinqi.setLayoutParams(mParam);
         kiyinki.setLayoutParams(mParam);
-        menu.setLayoutParams(mParam);
+        //menu.setLayoutParams(mParam);
 
         imview = (ImageView) findViewById(R.id.imvwsan);
-        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
+//        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
         mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
-        imview.setLayoutParams(mParam);
+//        imview.setLayoutParams(mParam);
         ibsan = (ImageButton) findViewById(R.id.imbtsan);
 
-        imview.setBackgroundResource(lzm.gambarsaya2[a]);
+//        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+
+        home.setOnClickListener(new ImageButton.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent Intent = new Intent(BelajarBaca.this, MenuAwal.class);
+                startActivity(Intent);
+
+            }
+        });
+
         halighan.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
 
@@ -120,16 +133,16 @@ public class BelajarBaca extends Activity {
         });
 
 
-        menu.setOnClickListener(new ImageButton.OnClickListener() {
+        /*menu.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 BelajarBaca.this.openOptionsMenu();
 
             }
-        });
+        });*/
 
 
 
-        imview.setOnTouchListener(new ImageView.OnTouchListener() {
+       /* imview.setOnTouchListener(new ImageView.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
@@ -155,7 +168,7 @@ public class BelajarBaca extends Activity {
                 return true;
             }
 
-        });
+        });*/
 
         ibsan.setOnTouchListener(new ImageButton.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
@@ -217,7 +230,7 @@ public class BelajarBaca extends Activity {
         if (a > 4) {
             a = 0;
         }
-        imview.setBackgroundResource(lzm.gambarsaya2[a]);
+//        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
         player(a);
 
@@ -239,7 +252,7 @@ public class BelajarBaca extends Activity {
         int bk = 0;
         Random rndGenerator = new Random();
         bk = rndGenerator.nextInt(5);
-        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
+//        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[bk]);
         player(bk);
         a = bk;
