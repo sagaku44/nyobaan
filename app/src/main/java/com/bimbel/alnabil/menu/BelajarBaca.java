@@ -32,7 +32,7 @@ public class BelajarBaca extends Activity {
     private ImageButton halighan;
     private ImageButton aldinqi;
     private ImageButton kiyinki;
-    private ImageButton menu;
+
     private MediaPlayer mMediaPlayer;
     private boolean sound = true;
     private int xTouch = 0, xClickOffset = 0, xOffset = 0;
@@ -78,13 +78,13 @@ public class BelajarBaca extends Activity {
 
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
-        menu = (ImageButton) findViewById(R.id.bt4);
+
         halighan.setMaxWidth(btnWidth-5);
 
         halighan.setLayoutParams(mParam);
         aldinqi.setLayoutParams(mParam);
         kiyinki.setLayoutParams(mParam);
-        menu.setLayoutParams(mParam);
+
 
         imview = (ImageView) findViewById(R.id.imvwsan);
         mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
@@ -120,12 +120,7 @@ public class BelajarBaca extends Activity {
         });
 
 
-        menu.setOnClickListener(new ImageButton.OnClickListener() {
-            public void onClick(View v) {
-                BelajarBaca.this.openOptionsMenu();
 
-            }
-        });
 
 
 
@@ -214,7 +209,7 @@ public class BelajarBaca extends Activity {
 
     public void Next() {
         a++;
-        if (a > 25) {
+        if (a > 5) {
             a = 0;
         }
         imview.setBackgroundResource(lzm.gambarsaya2[a]);
@@ -227,7 +222,7 @@ public class BelajarBaca extends Activity {
 
         a--;
         if (a < 0) {
-            a = 25;
+            a = 5;
         }
         imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
@@ -238,7 +233,7 @@ public class BelajarBaca extends Activity {
     public void halighan() {
         int bk = 0;
         Random rndGenerator = new Random();
-        bk = rndGenerator.nextInt(25);
+        bk = rndGenerator.nextInt(5);
         imview.setBackgroundResource(lzm.gambarsaya2[bk]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[bk]);
         player(bk);
