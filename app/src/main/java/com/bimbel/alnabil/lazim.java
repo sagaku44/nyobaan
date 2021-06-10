@@ -247,16 +247,16 @@ public class lazim {
             R.raw.transportasi_n
     };
     public int[] gambaralfabet = {
-            R.drawable.huruf_a,
+           /* R.drawable.huruf_a,
             R.drawable.huruf_b,
             R.drawable.huruf_c,
-            R.drawable.huruf_d,
+           R.drawable.huruf_d, */
             R.drawable.huruf_e,
-            R.drawable.huruf_f,
+           /*  R.drawable.huruf_f,
             R.drawable.huruf_g,
-            R.drawable.huruf_h,
+            R.drawable.huruf_h,*/
             R.drawable.huruf_i,
-            R.drawable.huruf_j,
+           /*  R.drawable.huruf_j,
             R.drawable.huruf_k,
             R.drawable.huruf_l,
             R.drawable.huruf_m,
@@ -266,13 +266,13 @@ public class lazim {
             R.drawable.huruf_q,
             R.drawable.huruf_r,
             R.drawable.huruf_s,
-            R.drawable.huruf_t,
+            R.drawable.huruf_t, */
             R.drawable.huruf_u,
-            R.drawable.huruf_v,
+         /*    R.drawable.huruf_v,
             R.drawable.huruf_w,
             R.drawable.huruf_x,
             R.drawable.huruf_y,
-            R.drawable.huruf_z
+            R.drawable.huruf_z */
     };
 
     //Drawable gambar transportasi

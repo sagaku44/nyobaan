@@ -72,6 +72,15 @@
             android:src="@drawable/kanan2"
             android:background="@drawable/button_gradient_bg"/>
 
+        <ImageButton
+            android:id="@+id/bt4"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btnmute2"
+            android:background="@drawable/button_gradient_bg" />
 
     </LinearLayout>
 

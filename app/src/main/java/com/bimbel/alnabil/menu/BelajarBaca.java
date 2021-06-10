@@ -32,7 +32,7 @@ public class BelajarBaca extends Activity {
     private ImageButton halighan;
     private ImageButton aldinqi;
     private ImageButton kiyinki;
-
+    private ImageButton menu;
     private MediaPlayer mMediaPlayer;
     private boolean sound = true;
     private int xTouch = 0, xClickOffset = 0, xOffset = 0;
@@ -78,13 +78,13 @@ public class BelajarBaca extends Activity {
 
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
-
+        menu = (ImageButton) findViewById(R.id.bt4);
         halighan.setMaxWidth(btnWidth-5);
 
         halighan.setLayoutParams(mParam);
         aldinqi.setLayoutParams(mParam);
         kiyinki.setLayoutParams(mParam);
-
+        menu.setLayoutParams(mParam);
 
         imview = (ImageView) findViewById(R.id.imvwsan);
         mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
@@ -120,7 +120,12 @@ public class BelajarBaca extends Activity {
         });
 
 
+        menu.setOnClickListener(new ImageButton.OnClickListener() {
+            public void onClick(View v) {
+                BelajarBaca.this.openOptionsMenu();
 
+            }
+        });
 
 
 
