@@ -52,10 +52,10 @@ public class BelajarBaca extends Activity {
         dm = this.getApplicationContext().getResources().getDisplayMetrics();
         int screenWidth = dm.widthPixels;
         int btnWidth=screenWidth/4;
-        LinearLayout.LayoutParams mParam = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-        );
+        //RelativeLayout.LayoutParams mParam = new RelativeLayout.LayoutParams(
+               // RelativeLayout.LayoutParams.FILL_PARENT,
+               // RelativeLayout.LayoutParams.WRAP_CONTENT
+        //);
 
         int barHeight;
 
@@ -75,10 +75,10 @@ public class BelajarBaca extends Activity {
 
         btnWidth=dm.widthPixels  /4;
         //herpHeight=dm.heightPixels/8;
-        mParam.width=btnWidth-10;
-        mParam.height=barHeight+2;
-        mParam.leftMargin=5;
-        mParam.rightMargin=5;
+        //mParam.width=btnWidth-10;
+        //mParam.height=barHeight+2;
+        //mParam.leftMargin=5;
+        //mParam.rightMargin=5;
         halighan = (ImageButton) findViewById(R.id.bt1);
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
@@ -86,14 +86,14 @@ public class BelajarBaca extends Activity {
         home = (ImageButton) findViewById(R.id.bt5);
         halighan.setMaxWidth(btnWidth-5);
 
-        halighan.setLayoutParams(mParam);
-        aldinqi.setLayoutParams(mParam);
-        kiyinki.setLayoutParams(mParam);
+        //halighan.setLayoutParams(mParam);
+        //aldinqi.setLayoutParams(mParam);
+        //kiyinki.setLayoutParams(mParam);
         //menu.setLayoutParams(mParam);
 
         //imview = (ImageView) findViewById(R.id.imvwsan);
 //        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
-        mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
+        //mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
 //        imview.setLayoutParams(mParam);
         ibsan = (ImageButton) findViewById(R.id.imbtsan);
 
