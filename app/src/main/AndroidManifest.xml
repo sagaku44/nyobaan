@@ -12,26 +12,31 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name=".ActivitLevel"></activity>
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuAwal"
-            android:screenOrientation="landscape">
-
-        </activity>
-        <activity android:name=".MengenalWarna"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".menu.BelajarBaca"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".menu.BelajarLatihanWarna"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".menu.BelajarHitung"
-            android:screenOrientation="landscape"/>
-
+        <activity
+            android:name=".MenuAwal"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".MengenalWarna"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".menu.BelajarBaca"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".menu.BelajarLatihanWarna"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".menu.BelajarHitung"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
