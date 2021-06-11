@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -17,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
+import android.animation.Animator;
 import com.bimbel.alnabil.MainActivity;
 import com.bimbel.alnabil.MenuAwal;
 import com.bimbel.alnabil.R;
@@ -232,6 +234,8 @@ public class BelajarBaca extends Activity {
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
+        ibsan.startAnimation(animasihuruf);
         player(a);
 
     }
@@ -242,8 +246,10 @@ public class BelajarBaca extends Activity {
         if (a < 0) {
             a = 4;
         }
-        imview.setBackgroundResource(lzm.gambarsaya2[a]);
+     //   imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.left_in);
+        ibsan.startAnimation(animasihuruf);
         player(a);
 
     }

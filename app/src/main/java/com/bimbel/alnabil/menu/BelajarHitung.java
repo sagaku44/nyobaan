@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -96,7 +98,7 @@ public class BelajarHitung extends Activity {
         ibsan = (ImageButton) findViewById(R.id.imbtsan);
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
 
         home.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
@@ -231,7 +233,9 @@ public class BelajarHitung extends Activity {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
+        ibsan.startAnimation(animasihuruf);
         player(a);
 
     }
@@ -242,8 +246,10 @@ public class BelajarHitung extends Activity {
         if (a < 0) {
             a = 4;
         }
-        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        //imview.setBackgroundResource(lzm.gambarsaya2[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_out);
+        ibsan.startAnimation(animasihuruf);
         player(a);
 
     }
@@ -253,7 +259,7 @@ public class BelajarHitung extends Activity {
         Random rndGenerator = new Random();
         bk = rndGenerator.nextInt(5);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[bk]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[bk]);
         player(bk);
         a = bk;
     }
@@ -264,7 +270,7 @@ public class BelajarHitung extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(BelajarHitung.this, lzm.musiksaya2[i]);
+            mMediaPlayer = MediaPlayer.create(BelajarHitung.this, lzm.musiksaya3[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

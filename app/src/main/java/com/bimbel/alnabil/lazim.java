@@ -200,6 +200,40 @@ public class lazim {
             R.raw.tr,
             R.raw.fa */
     };
+    //musiknumber
+    public int[] musiksaya3 = {
+            R.raw.number1,
+            R.raw.number2,
+            R.raw.number3,
+            /*R.raw.nada_b,
+            R.raw.nada_c,
+            R.raw.nada_d, */
+            R.raw.number4,
+            /*  R.raw.nada_f,
+              R.raw.nada_g,
+              R.raw.nada_h,*/
+
+            /*  R.raw.nada_j,
+              R.raw.nada_k,
+              R.raw.nada_l,
+              R.raw.nada_m,
+              R.raw.nada_n,*/
+            R.raw.number5,
+            /*  R.raw.nada_p,
+              R.raw.nada_q,
+              R.raw.nada_r,
+              R.raw.nada_s,
+              R.raw.nada_t, */
+
+            /*  R.raw.nada_v,
+              R.raw.nada_w,
+              R.raw.nada_x,
+              R.raw.nada_y,
+              R.raw.nada_z,
+              R.raw.tr,
+              R.raw.fa */
+    };
+
 
     //suara membaca hewan
     public int[] musikhewan = {
@@ -278,6 +312,38 @@ public class lazim {
             R.drawable.huruf_x,
             R.drawable.huruf_y,
             R.drawable.huruf_z */
+    };
+    //gambarnumber
+    public int[] gambarnumber= {
+            R.drawable.number1,
+            /*R.drawable.huruf_b,
+            R.drawable.huruf_c,
+           R.drawable.huruf_d, */
+
+            /*  R.drawable.huruf_f,
+             R.drawable.huruf_g,
+             R.drawable.huruf_h,*/
+            R.drawable.number2,
+            /*  R.drawable.huruf_j,
+             R.drawable.huruf_k,
+             R.drawable.huruf_l,
+             R.drawable.huruf_m,
+             R.drawable.huruf_n, */
+            R.drawable.number3,
+            R.drawable.number4,
+            R.drawable.number5,
+
+            /*   R.drawable.huruf_p,
+               R.drawable.huruf_q,
+               R.drawable.huruf_r,
+               R.drawable.huruf_s,
+               R.drawable.huruf_t, */
+
+            /*    R.drawable.huruf_v,
+               R.drawable.huruf_w,
+               R.drawable.huruf_x,
+               R.drawable.huruf_y,
+               R.drawable.huruf_z */
     };
 
     //Drawable gambar transportasi
