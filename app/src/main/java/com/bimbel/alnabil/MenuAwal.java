@@ -27,15 +27,7 @@ public class MenuAwal extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exitByBackKey();
 
-            //moveTaskToBack(false);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
 
     //untuk membuka aactivity
     public void BelajarBaca(View view)
@@ -69,30 +61,5 @@ public class MenuAwal extends AppCompatActivity {
         Intent intent = new Intent (MainActivity.this, ActivityTransportasi.class);
         startActivity(intent);
     }*/
-    protected void exitByBackKey() {
 
-        AlertDialog alertbox = new AlertDialog.Builder(this)
-                .setMessage("Ingin keluar dari Aplikasi?")
-                .setPositiveButton("YA", new DialogInterface.OnClickListener() {
-                    //membuat tombol pilihan
-                    // do something when the button is clicked
-                    public void onClick(DialogInterface arg0, int arg1) {
-
-                        finish();
-                        //close();
-                        //tutup
-
-
-                    }
-                })
-                .setNegativeButton("TIDAK", new DialogInterface.OnClickListener() {
-
-                    // do something when the button is clicked
-                    //saat tombol di klik
-                    public void onClick(DialogInterface arg0, int arg1) {
-                    }
-                })
-                .show();
-
-    }
 }

@@ -13,14 +13,13 @@
         android:layout_margin="@dimen/_20sdp"
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_gravity="center_vertical"
         android:src="@drawable/logo2"/>
 
     <ProgressBar
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/logo"
-        android:layout_margin="@dimen/_20sdp"
         android:id="@+id/splashProgress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="180dp"
