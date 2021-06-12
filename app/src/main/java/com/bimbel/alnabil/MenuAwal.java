@@ -28,6 +28,11 @@ public class MenuAwal extends AppCompatActivity {
     }
 
 
+    public void Homes(View view)
+    {
+        Intent intent = new Intent(MenuAwal.this, ActivitLevel.class);
+        startActivity(intent);
+    }
 
     //untuk membuka aactivity
     public void BelajarBaca(View view)

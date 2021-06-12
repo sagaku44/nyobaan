@@ -52,9 +52,9 @@ public class BelajarHitung extends Activity {
         dm = this.getApplicationContext().getResources().getDisplayMetrics();
         int screenWidth = dm.widthPixels;
         int btnWidth=screenWidth/4;
-        LinearLayout.LayoutParams mParam = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
+        RelativeLayout.LayoutParams mParam = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.FILL_PARENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
         );
 
         int barHeight;
