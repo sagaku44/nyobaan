@@ -77,8 +77,9 @@
 
         <ImageButton
             android:id="@+id/bt1"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
             android:layout_margin="@dimen/_5sdp"
             android:src="@drawable/btnrandom"
             android:background="@android:color/transparent" />

@@ -15,11 +15,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MenuAwal extends AppCompatActivity {
     private Button lvl1;
     private Button lvl2;
     private Button lvl3;
+    private ImageView homes;
 
 
     @Override
@@ -36,6 +38,7 @@ public class MenuAwal extends AppCompatActivity {
         lvl1 = (Button) findViewById(R.id.button1);
         lvl2 = (Button) findViewById(R.id.button2);
         lvl3 = (Button) findViewById(R.id.button3);
+        homes = (ImageView) findViewById(R.id.home);
     }
 
 
@@ -43,6 +46,8 @@ public class MenuAwal extends AppCompatActivity {
     {
         Intent intent = new Intent(MenuAwal.this, ActivitLevel.class);
         startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        homes.startAnimation(animasihuruf2);
     }
 
     //untuk membuka aactivity
