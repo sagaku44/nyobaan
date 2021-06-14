@@ -11,8 +11,16 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MenuAwal extends AppCompatActivity {
+    private Button lvl1;
+    private Button lvl2;
+    private Button lvl3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +33,9 @@ public class MenuAwal extends AppCompatActivity {
         setContentView(R.layout.activity_menu_awal);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        lvl1 = (Button) findViewById(R.id.button1);
+        lvl2 = (Button) findViewById(R.id.button2);
+        lvl3 = (Button) findViewById(R.id.button3);
     }
 
 
@@ -39,12 +50,24 @@ public class MenuAwal extends AppCompatActivity {
     {
         Intent intent = new Intent(MenuAwal.this, com.bimbel.alnabil.menu.BelajarBaca.class);
         startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        lvl1.startAnimation(animasihuruf2);
+
     }
     ///////////////
     public void BelajarHitung(View view)
     {
         Intent intent = new Intent(MenuAwal.this, com.bimbel.alnabil.menu.BelajarHitung.class);
         startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        lvl2.startAnimation(animasihuruf2);
+    }
+    public void BelajarSatukata(View view)
+    {
+        Intent intent = new Intent(MenuAwal.this, com.bimbel.alnabil.menu.Belajarsatukata.class);
+        startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        lvl3.startAnimation(animasihuruf2);
     }
     public void BelajarLatihanWarna(View view){
         Intent intent = new Intent(MenuAwal.this, com.bimbel.alnabil.menu.BelajarLatihanWarna.class);

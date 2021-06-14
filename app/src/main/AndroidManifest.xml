@@ -30,6 +30,9 @@
             android:name=".MengenalWarna"
             android:screenOrientation="landscape" />
         <activity
+            android:name=".menu.Belajarsatukata"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".menu.BelajarBaca"
             android:screenOrientation="landscape" />
         <activity

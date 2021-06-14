@@ -167,6 +167,18 @@ public class lazim {
             R.raw.tr,
             R.raw.fa
     };
+    public int[] musikkata1 = {
+            R.raw.mo,
+            R.raw.ba
+    };
+    public int[] musikkata2 = {
+            R.raw.bil,
+            R.raw.ca
+    };
+    public int[] musikkata3 = {
+            R.raw.mobil,
+            R.raw.baca
+    };
     //musik2
     public int[] musiksaya2 = {
             R.raw.nada_a,
@@ -281,6 +293,14 @@ public class lazim {
             R.raw.transportasi_l,
             R.raw.transportasi_m,
             R.raw.transportasi_n
+    };
+    public int[] gambarbaca1 = {
+            R.drawable.huruf_a,
+            R.drawable.huruf_u
+    };
+    public int[] gambarbaca2 = {
+            R.drawable.huruf_u,
+            R.drawable.huruf_a
     };
     public int[] gambaralfabet = {
            R.drawable.huruf_a,

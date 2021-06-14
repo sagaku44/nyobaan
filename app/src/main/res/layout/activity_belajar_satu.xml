@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundhurup"
+    android:id="@+id/lysantunush"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/scr_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:background="@drawable/huruf_a"
+            android:id="@+id/kata1"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_120sdp" />
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_120sdp"
+            android:background="@drawable/huruf_o"
+            android:id="@+id/kata2"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_120sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingStart="@dimen/_55sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt2"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingEnd="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/back2"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kembali"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/bt1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/btnrandom"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/lykontrol"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+
+
+        <ImageButton
+            android:id="@+id/bt4"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </LinearLayout>-->
+
+</RelativeLayout>
