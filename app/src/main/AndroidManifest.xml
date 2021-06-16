@@ -12,8 +12,15 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivitLevel"
+        <activity android:name=".level2.Lev2MengenalAngka510"
             android:screenOrientation="landscape"></activity>
+        <activity android:name=".level2.Lev2MembacaDenganPola"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".level2.lev2Membaca2SukuKata"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ActivitLevel"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="landscape">
@@ -24,22 +31,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuAwal"
-            android:screenOrientation="landscape"></activity>
+            android:name=".level1.Level1"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MengenalWarna"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".menu.Belajarsatukata"
+            android:name=".level1.Belajarsatukata"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".menu.BelajarBaca"
+            android:name=".level1.BelajarBaca"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".menu.BelajarLatihanWarna"
+            android:name=".level1.BelajarLatihanWarna"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".menu.BelajarHitung"
+            android:name=".level1.BelajarHitung"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".level2.Level2"
             android:screenOrientation="landscape" />
     </application>
 

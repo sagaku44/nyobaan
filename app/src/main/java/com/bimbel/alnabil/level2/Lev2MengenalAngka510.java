@@ -1,6 +1,7 @@
-package com.bimbel.alnabil.menu;
+package com.bimbel.alnabil.level2;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
@@ -18,20 +19,20 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.bimbel.alnabil.MenuAwal;
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
+import com.bimbel.alnabil.level1.BelajarHitung;
+import com.bimbel.alnabil.level1.Level1;
 
 import java.util.Random;
 
-public class Belajarsatukata extends Activity {
+public class Lev2MengenalAngka510 extends AppCompatActivity {
+
     private int a = 0;
     private int b = 0;
     private lazim lzm = new lazim();
-    private lazim kata = new lazim();
     private ImageView imview;
-    private ImageButton bckata1;
-    private ImageButton bckata2;
+    private ImageButton ibsan;
     private ImageButton halighan;
     private ImageButton aldinqi;
     private ImageButton kiyinki;
@@ -43,7 +44,7 @@ public class Belajarsatukata extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_belajar_satu);
+        setContentView(R.layout.activity_lev2_mengenal_angka510);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
@@ -51,10 +52,10 @@ public class Belajarsatukata extends Activity {
         dm = this.getApplicationContext().getResources().getDisplayMetrics();
         int screenWidth = dm.widthPixels;
         int btnWidth=screenWidth/4;
-        //RelativeLayout.LayoutParams mParam = new RelativeLayout.LayoutParams(
-               // RelativeLayout.LayoutParams.FILL_PARENT,
-               // RelativeLayout.LayoutParams.WRAP_CONTENT
-        //);
+        RelativeLayout.LayoutParams mParam = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.FILL_PARENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
 
         int barHeight;
 
@@ -74,41 +75,35 @@ public class Belajarsatukata extends Activity {
 
         btnWidth=dm.widthPixels  /4;
         //herpHeight=dm.heightPixels/8;
-        //mParam.width=btnWidth-10;
-        //mParam.height=barHeight+2;
-        //mParam.leftMargin=5;
-        //mParam.rightMargin=5;
+        mParam.width=btnWidth-10;
+        mParam.height=barHeight+2;
+        mParam.leftMargin=5;
+        mParam.rightMargin=5;
         halighan = (ImageButton) findViewById(R.id.bt1);
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
-
         //menu = (ImageButton) findViewById(R.id.bt4);
         home = (ImageButton) findViewById(R.id.bt5);
         halighan.setMaxWidth(btnWidth-5);
 
-        //halighan.setLayoutParams(mParam);
-        //aldinqi.setLayoutParams(mParam);
-        //kiyinki.setLayoutParams(mParam);
+        halighan.setLayoutParams(mParam);
+        aldinqi.setLayoutParams(mParam);
+        kiyinki.setLayoutParams(mParam);
         //menu.setLayoutParams(mParam);
 
         //imview = (ImageView) findViewById(R.id.imvwsan);
 //        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
-        //mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
+        mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
 //        imview.setLayoutParams(mParam);
-        bckata1 = (ImageButton) findViewById(R.id.kata1);
-
-        bckata2 = (ImageButton) findViewById(R.id.kata2);
+        ibsan = (ImageButton) findViewById(R.id.imbtsan);
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
-        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
-        bckata1.startAnimation(animasihuruf2);
-        bckata2.startAnimation(animasihuruf2);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+
         home.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
 
-                Intent Intent = new Intent(Belajarsatukata.this, MenuAwal.class);
+                Intent Intent = new Intent(Lev2MengenalAngka510.this, Level2.class);
                 startActivity(Intent);
 
             }
@@ -135,7 +130,6 @@ public class Belajarsatukata extends Activity {
         kiyinki.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
                 Next();
-
 
             }
         });
@@ -178,14 +172,11 @@ public class Belajarsatukata extends Activity {
 
         });*/
 
-        bckata1.setOnTouchListener(new ImageButton.OnTouchListener() {
+        ibsan.setOnTouchListener(new ImageButton.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
                     xClickOffset = xTouch;
-                    final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
-                    bckata1.startAnimation(animasihuruf2);
-
                 } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     xOffset += xTouch - (int) event.getX();
                     xTouch = (int) event.getX();
@@ -203,40 +194,11 @@ public class Belajarsatukata extends Activity {
                     }
                 }
                 return true;
-
             }
 
         });
-        bckata2.setOnTouchListener(new ImageButton.OnTouchListener() {
-            public boolean onTouch(View arg0, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    xTouch = (int) event.getX();
-                    xClickOffset = xTouch;
-                    final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
-                    bckata2.startAnimation(animasihuruf2);
 
-                } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-                    xOffset += xTouch - (int) event.getX();
-                    xTouch = (int) event.getX();
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    if (event.getX() - xClickOffset > 20)// onggha surulgenni
-                    {
-                        aldigha();
-                    }
-                    if (event.getX() - xClickOffset < -20)// solgha surulgenni
-                    {
-                        Next();
-                    }
-                    if (event.getX()-xClickOffset<40 && event.getX()-xClickOffset>-40) {
-                        player2(a);
-                    }
-                }
-                return true;
-
-            }
-
-        });
-       /* RelativeLayout layout = new RelativeLayout(this);
+        RelativeLayout layout = new RelativeLayout(this);
         layout.setOnTouchListener(new RelativeLayout.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -262,23 +224,19 @@ public class Belajarsatukata extends Activity {
                 return true;
             }
 
-        }); */
+        });
     }
 
     public void Next() {
         a++;
-        if (a > 1) {
+        if (a > 4) {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
-        bckata1.startAnimation(animasihuruf);
-        bckata2.startAnimation(animasihuruf);
-        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
-        kiyinki.startAnimation(animasihuruf2);
-        player3(a);
+        ibsan.startAnimation(animasihuruf);
+        player(a);
 
     }
 
@@ -286,29 +244,23 @@ public class Belajarsatukata extends Activity {
 
         a--;
         if (a < 0) {
-            a = 1;
+            a = 4;
         }
-     //   imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
-        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.left_in);
-        bckata1.startAnimation(animasihuruf);
-        bckata2.startAnimation(animasihuruf);
-        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
-        aldinqi.startAnimation(animasihuruf2);
-        player3(a);
+        //imview.setBackgroundResource(lzm.gambarsaya2[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_out);
+        ibsan.startAnimation(animasihuruf);
+        player(a);
 
     }
 
     public void halighan() {
         int bk = 0;
         Random rndGenerator = new Random();
-        bk = rndGenerator.nextInt(1);
+        bk = rndGenerator.nextInt(5);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[bk]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[bk]);
-        player3(bk);
-
+        ibsan.setBackgroundResource(lzm.gambarnumber[bk]);
+        player(bk);
         a = bk;
     }
 
@@ -318,7 +270,7 @@ public class Belajarsatukata extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(Belajarsatukata.this, lzm.musikkata1[i]);
+            mMediaPlayer = MediaPlayer.create(Lev2MengenalAngka510.this, lzm.musiksaya3[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {
@@ -327,41 +279,11 @@ public class Belajarsatukata extends Activity {
             }
         }
     }
-    public void player2(int i) {
-        if (sound == true) {
-            if (mMediaPlayer != null) {
-                mMediaPlayer.release();
 
-            }
-            mMediaPlayer = MediaPlayer.create(Belajarsatukata.this, lzm.musikkata2[i]);
-            mMediaPlayer.start();
-        } else if (sound == false) {
-            if (mMediaPlayer != null) {
-
-                mMediaPlayer.stop();
-            }
-        }
-    }
-    public void player3(int i) {
-        if (sound == true) {
-            if (mMediaPlayer != null) {
-                mMediaPlayer.release();
-
-            }
-            mMediaPlayer = MediaPlayer.create(Belajarsatukata.this, lzm.musikkata3[i]);
-            mMediaPlayer.start();
-        } else if (sound == false) {
-            if (mMediaPlayer != null) {
-
-                mMediaPlayer.stop();
-            }
-        }
-    }
-/*
     public boolean onCreateOptionsMenu(Menu menu) {
 
         //menu.add(0, 1, 1, "Quiz Tebak Angka")
-                //.setIcon(R.drawable.share_icon);
+        //.setIcon(R.drawable.share_icon);
         menu.add(0, 2, 2, "Matikan/Hidupkan Suara").setIcon(
                 R.drawable.sound);
 
@@ -374,7 +296,7 @@ public class Belajarsatukata extends Activity {
         if (item.getItemId() == 1) {
             Intent tallash = new Intent();
             //tallash.setClass(BelajarBaca.this, TebakAngka.class);
-            Belajarsatukata.this.startActivity(tallash);
+            Lev2MengenalAngka510.this.startActivity(tallash);
 
         } else if (item.getItemId() == 2) {
 
@@ -399,6 +321,6 @@ public class Belajarsatukata extends Activity {
         }
         return true;
     }
-*/
+
 
 }

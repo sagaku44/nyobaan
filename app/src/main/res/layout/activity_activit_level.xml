@@ -38,8 +38,9 @@
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_marginEnd="@dimen/_3sdp"
                 android:layout_marginBottom="@dimen/_3sdp"
+                android:onClick="Level2"
                 android:src="@drawable/lev2" />
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/level3"
                 android:layout_width="509dp"
                 android:layout_height="106dp"
@@ -49,7 +50,7 @@
                 android:layout_marginEnd="@dimen/_3sdp"
                 android:layout_marginBottom="@dimen/_3sdp"
                 android:src="@drawable/lev2" />
-            <!--<ImageView
+            <ImageView
                 android:id="@+id/level3"
                 android:layout_below="@+id/level2"
                 android:layout_width="wrap_content"

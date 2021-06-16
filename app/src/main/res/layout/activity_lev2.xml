@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bimbel.alnabil.MenuAwal"
+    tools:context="com.bimbel.alnabil.level2.Level2"
     android:background="@drawable/alnabilbackground">
 
     <RelativeLayout
@@ -31,16 +31,16 @@
             android:layout_marginTop="13dp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/vokal"
-            android:onClick="BelajarBaca" />
+            android:background="@drawable/membaca2sukukata"
+            android:onClick="duasukukata" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
-            android:onClick="BelajarHitung"
+            android:onClick="polaaiueo"
             android:id="@+id/button2"
-            android:background="@drawable/angka"
+            android:background="@drawable/membacapola"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_below="@+id/button1" />
@@ -48,31 +48,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
-            android:onClick="BelajarSatukata"
+            android:onClick="angka510"
             android:id="@+id/button3"
-            android:background="@drawable/sukukata"
+            android:background="@drawable/angka510"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_below="@+id/button2" />
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="BelajarLatihanWarna"
-        android:id="@+id/button3"
-        android:layout_margin="@dimen/_10sdp"
-        android:background="@drawable/btn3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center" />-->
 
-    <ImageView
-        android:layout_below="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp"
-        android:src="@drawable/pcbwh"
-        android:layout_gravity="center" />
+        <ImageView
+            android:layout_below="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/pcbwh"
+            android:layout_gravity="center" />
 
     </RelativeLayout>
 
