@@ -1,7 +1,6 @@
 package com.bimbel.alnabil.level2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
@@ -11,9 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -21,13 +20,10 @@ import android.widget.Toast;
 
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
-import com.bimbel.alnabil.level1.BelajarBaca;
-import com.bimbel.alnabil.level1.Level1;
 
 import java.util.Random;
 
-public class Lev2MembacaDenganPola extends AppCompatActivity {
-
+public class Lev2MembacaDenganPola extends Activity {
     private int a = 0;
     private int b = 0;
     private lazim lzm = new lazim();

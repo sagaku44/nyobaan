@@ -1,7 +1,6 @@
 package com.bimbel.alnabil.level2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
@@ -17,13 +16,10 @@ import android.widget.ImageView;
 
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
-import com.bimbel.alnabil.level1.Belajarsatukata;
-import com.bimbel.alnabil.level1.Level1;
 
 import java.util.Random;
 
-public class lev2Membaca2SukuKata extends AppCompatActivity {
-
+public class lev2Membaca2SukuKata extends Activity {
     private int b = 0;
     private int a = 0;
     private lazim lzm = new lazim();

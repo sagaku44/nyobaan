@@ -12,12 +12,6 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".level2.Lev2MengenalAngka510"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".level2.Lev2MembacaDenganPola"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".level2.lev2Membaca2SukuKata"
-            android:screenOrientation="landscape"/>
         <activity
             android:name=".ActivitLevel"
             android:screenOrientation="landscape" />
@@ -51,6 +45,15 @@
         <activity
             android:name=".level2.Level2"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".level2.Lev2MengenalAngka510"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".level2.Lev2MembacaDenganPola"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".level2.lev2Membaca2SukuKata"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
