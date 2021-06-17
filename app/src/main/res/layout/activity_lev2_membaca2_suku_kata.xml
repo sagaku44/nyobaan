@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/backgroundhurup"
+    android:background="@drawable/tampilangka"
     android:id="@+id/lysantunush"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
@@ -10,16 +10,18 @@
 
     <RelativeLayout
         android:id="@+id/card"
+        android:background="@drawable/board"
         android:layout_centerInParent="true"
-        android:layout_width="@dimen/_300sdp"
-        android:layout_height="@dimen/_200sdp">
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="@dimen/_250sdp">
 
-        <androidx.cardview.widget.CardView
+        <!--<androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
             app:cardBackgroundColor="?android:attr/textColorSecondaryInverse"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_width="@dimen/_250sdp"
             app:cardCornerRadius="@dimen/_10sdp"
-            app:cardElevation="@dimen/_10sdp"/>
+            app:cardElevation="@dimen/_10sdp"/>-->
 
     </RelativeLayout>
 

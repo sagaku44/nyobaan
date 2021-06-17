@@ -33,6 +33,16 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/vokal"
             android:onClick="BelajarBaca" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:onClick="BelajarSatukata"
+            android:id="@+id/button3"
+            android:background="@drawable/sukukata"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/button1" />
 
         <Button
             android:layout_width="wrap_content"
@@ -43,17 +53,7 @@
             android:background="@drawable/angka"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_below="@+id/button1" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:onClick="BelajarSatukata"
-            android:id="@+id/button3"
-            android:background="@drawable/sukukata"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_below="@+id/button2" />
+            android:layout_below="@+id/button3" />
 
     <!--<Button
         android:layout_width="wrap_content"
