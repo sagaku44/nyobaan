@@ -194,7 +194,7 @@ public class BelajarHitung extends Activity {
 
         });
 
-        RelativeLayout layout = new RelativeLayout(this);
+        /*RelativeLayout layout = new RelativeLayout(this);
         layout.setOnTouchListener(new RelativeLayout.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -220,7 +220,7 @@ public class BelajarHitung extends Activity {
                 return true;
             }
 
-        });
+        });*/
     }
 
     public void Next() {
@@ -232,6 +232,8 @@ public class BelajarHitung extends Activity {
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
         ibsan.startAnimation(animasihuruf);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        ibsan.startAnimation(animasihuruf2);
         player(a);
 
     }
@@ -246,6 +248,8 @@ public class BelajarHitung extends Activity {
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_out);
         ibsan.startAnimation(animasihuruf);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        aldinqi.startAnimation(animasihuruf2);
         player(a);
 
     }
