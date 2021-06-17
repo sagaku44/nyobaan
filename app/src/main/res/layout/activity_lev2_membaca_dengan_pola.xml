@@ -14,7 +14,7 @@
         android:layout_height="@dimen/_200sdp">
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/k"
+            app:cardBackgroundColor="?android:attr/textColorSecondaryInverse"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             app:cardCornerRadius="@dimen/_10sdp"

@@ -14,7 +14,7 @@
         android:layout_height="@dimen/_200sdp">
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/k"
+            app:cardBackgroundColor="?android:attr/textColorSecondaryInverse"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             app:cardCornerRadius="@dimen/_10sdp"
@@ -24,20 +24,21 @@
 
     <RelativeLayout
         android:id="@+id/scr_layout"
+        android:layout_toRightOf="@+id/left"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:background="@drawable/huruf_a"
             android:id="@+id/kata1"
             android:layout_height="@dimen/_100sdp"
             android:layout_width="@dimen/_120sdp" />
+
         <ImageButton
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/_120sdp"
+
+            android:layout_marginStart="@dimen/_170sdp"
             android:background="@drawable/huruf_o"
             android:id="@+id/kata2"
             android:layout_height="@dimen/_100sdp"
@@ -46,6 +47,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/left"
         android:layout_toLeftOf="@+id/card"
         android:layout_centerInParent="true"
         android:padding="@dimen/_5sdp"
