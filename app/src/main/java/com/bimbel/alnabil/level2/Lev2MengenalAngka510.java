@@ -225,7 +225,7 @@ public class Lev2MengenalAngka510 extends Activity {
 
     public void Next() {
         a++;
-        if (a > 4) {
+        if (a > 9) {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
@@ -240,7 +240,7 @@ public class Lev2MengenalAngka510 extends Activity {
 
         a--;
         if (a < 0) {
-            a = 4;
+            a = 9;
         }
         //imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
@@ -253,7 +253,7 @@ public class Lev2MengenalAngka510 extends Activity {
     public void halighan() {
         int bk = 0;
         Random rndGenerator = new Random();
-        bk = rndGenerator.nextInt(5);
+        bk = rndGenerator.nextInt(10);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
         ibsan.setBackgroundResource(lzm.gambarnumber[bk]);
         player(bk);

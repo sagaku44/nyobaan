@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/backgroundhurup"
     android:id="@+id/lysantunush"
     android:layout_height="fill_parent"
@@ -27,19 +28,20 @@
         android:layout_toRightOf="@+id/left"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UnknownIdInLayout">
 
         <ImageButton
-            android:layout_marginStart="@dimen/_10sdp"
-            android:background="@drawable/huruf_a"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:background="@drawable/a"
             android:id="@+id/kata1"
             android:layout_height="@dimen/_100sdp"
             android:layout_width="@dimen/_120sdp" />
 
         <ImageButton
 
-            android:layout_marginStart="@dimen/_170sdp"
-            android:background="@drawable/huruf_o"
+            android:layout_marginStart="@dimen/_61sdp"
+            android:background="@drawable/ku"
             android:id="@+id/kata2"
             android:layout_height="@dimen/_100sdp"
             android:layout_width="@dimen/_120sdp" />

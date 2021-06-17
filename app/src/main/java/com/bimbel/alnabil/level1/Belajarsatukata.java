@@ -262,7 +262,7 @@ public class Belajarsatukata extends Activity {
 
     public void Next() {
         a++;
-        if (a > 1) {
+        if (a > 4) {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
@@ -281,7 +281,7 @@ public class Belajarsatukata extends Activity {
 
         a--;
         if (a < 0) {
-            a = 1;
+            a = 4;
         }
      //   imview.setBackgroundResource(lzm.gambarsaya2[a]);
         bckata1.setBackgroundResource(lzm.gambarbaca1[a]);

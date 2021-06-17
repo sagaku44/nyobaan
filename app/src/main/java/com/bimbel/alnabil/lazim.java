@@ -168,253 +168,71 @@ public class lazim {
             R.raw.fa
     };
     public int[] musikkata1 = {
-            R.raw.mo,
-            R.raw.ba
+            R.raw.ku,
+            R.raw.i,
+            R.raw.u,
+            R.raw.e,
+            R.raw.o
     };
     public int[] musikkata2 = {
-            R.raw.bil,
-            R.raw.ca
+            R.raw.a,
+            R.raw.zin,
+            R.raw.mur,
+            R.raw.ja,
+            R.raw.rang
     };
     public int[] musikkata3 = {
-            R.raw.mobil,
-            R.raw.baca
+            R.raw.aku,
+            R.raw.izin,
+            R.raw.umur,
+            R.raw.eja,
+            R.raw.orang
     };
     //musik2
     public int[] musiksaya2 = {
             R.raw.nada_a,
             R.raw.nada_i,
             R.raw.nada_u,
-            /*R.raw.nada_b,
-            R.raw.nada_c,
-            R.raw.nada_d, */
             R.raw.nada_e,
-          /*  R.raw.nada_f,
-            R.raw.nada_g,
-            R.raw.nada_h,*/
-
-          /*  R.raw.nada_j,
-            R.raw.nada_k,
-            R.raw.nada_l,
-            R.raw.nada_m,
-            R.raw.nada_n,*/
-            R.raw.nada_o,
-          /*  R.raw.nada_p,
-            R.raw.nada_q,
-            R.raw.nada_r,
-            R.raw.nada_s,
-            R.raw.nada_t, */
-
-          /*  R.raw.nada_v,
-            R.raw.nada_w,
-            R.raw.nada_x,
-            R.raw.nada_y,
-            R.raw.nada_z,
-            R.raw.tr,
-            R.raw.fa */
+            R.raw.nada_o
     };
     //musiknumber
     public int[] musiksaya3 = {
             R.raw.number1,
             R.raw.number2,
             R.raw.number3,
-            /*R.raw.nada_b,
-            R.raw.nada_c,
-            R.raw.nada_d, */
             R.raw.number4,
-            /*  R.raw.nada_f,
-              R.raw.nada_g,
-              R.raw.nada_h,*/
-
-            /*  R.raw.nada_j,
-              R.raw.nada_k,
-              R.raw.nada_l,
-              R.raw.nada_m,
-              R.raw.nada_n,*/
             R.raw.number5,
-            /*  R.raw.nada_p,
-              R.raw.nada_q,
-              R.raw.nada_r,
-              R.raw.nada_s,
-              R.raw.nada_t, */
-
-            /*  R.raw.nada_v,
-              R.raw.nada_w,
-              R.raw.nada_x,
-              R.raw.nada_y,
-              R.raw.nada_z,
-              R.raw.tr,
-              R.raw.fa */
+            R.raw.number6,
+            R.raw.number7,
+            R.raw.number8,
+            R.raw.number9,
+            R.raw.number10
     };
 
 
-    //suara membaca hewan
-    public int[] musikhewan = {
-            R.raw.arti_a2,
-            R.raw.arti_b2,
-            R.raw.arti_c2,
-            R.raw.arti_d2,
-            R.raw.arti_e2,
-            R.raw.arti_f2,
-            R.raw.arti_g2,
-            R.raw.arti_h2,
-            R.raw.arti_i2,
-            R.raw.arti_j2,
-            R.raw.arti_k2,
-            R.raw.arti_l2,
-            R.raw.arti_m2,
-            R.raw.arti_n2,
-            R.raw.arti_o2,
-            R.raw.arti_p2,
-            R.raw.arti_q2,
-            R.raw.arti_r2,
-            R.raw.arti_s2,
-            R.raw.arti_t2,
-            R.raw.arti_u2,
-            R.raw.arti_v2,
-            R.raw.arti_w2,
-            R.raw.arti_x2,
-            R.raw.arti_y2,
-            R.raw.arti_z2
-    };
-
-    //musik transportasi
-    public int[] musiksaya4 = {
-            R.raw.transportasi_a,
-            R.raw.transportasi_b,
-            R.raw.transportasi_c,
-            R.raw.transportasi_d,
-            R.raw.transportasi_e,
-            R.raw.transportasi_f,
-            R.raw.transportasi_g,
-            R.raw.transportasi_h,
-            R.raw.transportasi_i,
-            R.raw.transportasi_j,
-            R.raw.transportasi_k,
-            R.raw.transportasi_l,
-            R.raw.transportasi_m,
-            R.raw.transportasi_n
-    };
     public int[] gambarbaca1 = {
-            R.drawable.huruf_a,
-            R.drawable.huruf_u
+            R.drawable.a,
+            R.drawable.i,
+            R.drawable.u,
+            R.drawable.e,
+            R.drawable.o
     };
     public int[] gambarbaca2 = {
-            R.drawable.huruf_u,
-            R.drawable.huruf_a
+            R.drawable.ku,
+            R.drawable.zin,
+            R.drawable.mur,
+            R.drawable.ja,
+            R.drawable.rang
     };
     public int[] gambaralfabet = {
            R.drawable.huruf_a,
-            /*R.drawable.huruf_b,
-            R.drawable.huruf_c,
-           R.drawable.huruf_d, */
-
-           /*  R.drawable.huruf_f,
-            R.drawable.huruf_g,
-            R.drawable.huruf_h,*/
             R.drawable.huruf_i,
-           /*  R.drawable.huruf_j,
-            R.drawable.huruf_k,
-            R.drawable.huruf_l,
-            R.drawable.huruf_m,
-            R.drawable.huruf_n, */
             R.drawable.huruf_u,
             R.drawable.huruf_e,
-            R.drawable.huruf_o,
-
-         /*   R.drawable.huruf_p,
-            R.drawable.huruf_q,
-            R.drawable.huruf_r,
-            R.drawable.huruf_s,
-            R.drawable.huruf_t, */
-
-         /*    R.drawable.huruf_v,
-            R.drawable.huruf_w,
-            R.drawable.huruf_x,
-            R.drawable.huruf_y,
-            R.drawable.huruf_z */
-    };
-    //gambarnumber
+            R.drawable.huruf_o
+};
     public int[] gambarnumber= {
-            R.drawable.number1,
-            /*R.drawable.huruf_b,
-            R.drawable.huruf_c,
-           R.drawable.huruf_d, */
-
-            /*  R.drawable.huruf_f,
-             R.drawable.huruf_g,
-             R.drawable.huruf_h,*/
-            R.drawable.number2,
-            /*  R.drawable.huruf_j,
-             R.drawable.huruf_k,
-             R.drawable.huruf_l,
-             R.drawable.huruf_m,
-             R.drawable.huruf_n, */
-            R.drawable.number3,
-            R.drawable.number4,
-            R.drawable.number5,
-
-            /*   R.drawable.huruf_p,
-               R.drawable.huruf_q,
-               R.drawable.huruf_r,
-               R.drawable.huruf_s,
-               R.drawable.huruf_t, */
-
-            /*    R.drawable.huruf_v,
-               R.drawable.huruf_w,
-               R.drawable.huruf_x,
-               R.drawable.huruf_y,
-               R.drawable.huruf_z */
-    };
-
-    //Drawable gambar transportasi
-    //drawable hewan
-    public int[] gambartransportasi= {
-            R.drawable.huruf_a2,
-            R.drawable.huruf_b2,
-            R.drawable.huruf_c2,
-            R.drawable.huruf_d2,
-            R.drawable.huruf_e2,
-            R.drawable.huruf_f2,
-            R.drawable.huruf_g2,
-            R.drawable.huruf_h2,
-            R.drawable.huruf_i2,
-            R.drawable.huruf_j2,
-            R.drawable.huruf_k2,
-            R.drawable.huruf_l2,
-            R.drawable.huruf_m2,
-            R.drawable.huruf_n2
-    };
-
-    //drawable hewan
-    public int[] gambarhewan = {
-            R.drawable.huruf_a1,
-            R.drawable.huruf_b1,
-            R.drawable.huruf_c1,
-            R.drawable.huruf_d1,
-            R.drawable.huruf_e1,
-            R.drawable.huruf_f1,
-            R.drawable.huruf_g1,
-            R.drawable.huruf_h1,
-            R.drawable.huruf_i1,
-            R.drawable.huruf_j1,
-            R.drawable.huruf_k1,
-            R.drawable.huruf_l1,
-            R.drawable.huruf_m1,
-            R.drawable.huruf_n1,
-            R.drawable.huruf_o1,
-            R.drawable.huruf_p1,
-            R.drawable.huruf_q1,
-            R.drawable.huruf_r1,
-            R.drawable.huruf_s1,
-            R.drawable.huruf_t1,
-            R.drawable.huruf_u1,
-            R.drawable.huruf_v1,
-            R.drawable.huruf_w1,
-            R.drawable.huruf_x1,
-            R.drawable.huruf_y1,
-            R.drawable.huruf_z1
-    };
-    public int[] nomorsaya = {
             R.drawable.number1,
             R.drawable.number2,
             R.drawable.number3,
@@ -424,17 +242,7 @@ public class lazim {
             R.drawable.number7,
             R.drawable.number8,
             R.drawable.number9,
-            R.drawable.number10,
-            R.drawable.number11,
-            R.drawable.number12,
-            R.drawable.number13,
-            R.drawable.number14,
-            R.drawable.number15,
-            R.drawable.number16,
-            R.drawable.number17,
-            R.drawable.number18,
-            R.drawable.number19,
-            R.drawable.number20
+            R.drawable.number10
     };
     public int[] color = {Color.BLACK, Color.BLUE, Color.CYAN, Color.DKGRAY, Color.GRAY, Color.GREEN, Color.LTGRAY, Color.MAGENTA, Color.RED, Color.YELLOW};
 
