@@ -30,6 +30,11 @@
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_175sdp">
 
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ayam"/>
+
         <ImageButton
             android:background="@drawable/huruf_a"
             android:id="@+id/imbtsan"
