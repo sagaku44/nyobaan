@@ -280,8 +280,8 @@ public class Lev2MengenalAngka510 extends Activity {
 
         //menu.add(0, 1, 1, "Quiz Tebak Angka")
         //.setIcon(R.drawable.share_icon);
-        menu.add(0, 2, 2, "Matikan/Hidupkan Suara").setIcon(
-                R.drawable.sound);
+        //menu.add(0, 2, 2, "Matikan/Hidupkan Suara").setIcon(
+                //R.drawable.sound);
 
 
         return super.onCreateOptionsMenu(menu);
@@ -300,7 +300,7 @@ public class Lev2MengenalAngka510 extends Activity {
 
                 Toast toast = new Toast(this);
                 ImageView view = new ImageView(this);
-                view.setImageResource(R.drawable.off);
+                //view.setImageResource(R.drawable.off);
                 // toast.setGravity(Gravity.NO_GRAVITY,toast.getXOffset()/2,toast.getYOffset()/2);
                 toast.setView(view);
                 toast.show();
@@ -308,7 +308,7 @@ public class Lev2MengenalAngka510 extends Activity {
             } else {
                 Toast toast = new Toast(this);
                 ImageView view = new ImageView(this);
-                view.setImageResource(R.drawable.on);
+                //view.setImageResource(R.drawable.on);
                 // toast.setGravity(Gravity.NO_GRAVITY,toast.getXOffset()/2,toast.getYOffset()/2);
                 toast.setView(view);
                 toast.show();

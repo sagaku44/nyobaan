@@ -3,7 +3,7 @@ package com.bimbel.alnabil;
 import android.graphics.Color;
 
 public class lazim {
-    public int[] mycolor = {R.drawable.merah, R.drawable.jingga, R.drawable.kuning, R.drawable.hijau, R.drawable.biru, R.drawable.ungu, R.drawable.merahmuda, R.drawable.cokelat, R.drawable.hitam, R.drawable.abuabu, R.drawable.putih};
+    /*public int[] mycolor = {R.drawable.merah, R.drawable.jingga, R.drawable.kuning, R.drawable.hijau, R.drawable.biru, R.drawable.ungu, R.drawable.merahmuda, R.drawable.cokelat, R.drawable.hitam, R.drawable.abuabu, R.drawable.putih};
     public String[] colorname = {"Merah", "Oren", "Kuning", "Hijau", "Biru", "Ungu", "Merah Muda", "Cokelat", "Hitam", "Abu-Abu", "Putih"};
 
     public int[] mymp3 = {
@@ -18,7 +18,7 @@ public class lazim {
             R.raw.color_black,
             R.raw.color_gray,
             R.raw.color_white
-    };
+    };*/
     public int[] musikkatagambar = {
             R.raw.ayam,
             R.raw.ikan,
