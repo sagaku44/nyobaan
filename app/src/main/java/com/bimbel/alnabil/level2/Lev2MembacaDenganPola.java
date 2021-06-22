@@ -29,7 +29,7 @@ public class Lev2MembacaDenganPola extends Activity {
     private int a = 0;
     private int b = 0;
     private lazim lzm = new lazim();
-    private ImageView btgb;
+    private ImageView btgb,bt;
     private ImageButton ibsan;
     private ImageButton halighan;
     private ImageButton aldinqi;
@@ -46,6 +46,7 @@ public class Lev2MembacaDenganPola extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         btgb = (ImageView) findViewById(R.id.gambar);
+        bt = (ImageView) findViewById(R.id.tampilsemua);
         DisplayMetrics dm = new DisplayMetrics();
         dm = this.getApplicationContext().getResources().getDisplayMetrics();
         int screenWidth = dm.widthPixels;
@@ -135,44 +136,6 @@ public class Lev2MembacaDenganPola extends Activity {
             }
         });
 
-
-        /*menu.setOnClickListener(new ImageButton.OnClickListener() {
-            public void onClick(View v) {
-                BelajarBaca.this.openOptionsMenu();
-
-            }
-        });*/
-
-
-
-       /* imview.setOnTouchListener(new ImageView.OnTouchListener() {
-            public boolean onTouch(View arg0, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    xTouch = (int) event.getX();
-                    xClickOffset = xTouch;
-                } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-                    xOffset += xTouch - (int) event.getX();
-                    xTouch = (int) event.getX();
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    if (event.getX() - xClickOffset > 40)// onggha surulgenni
-                    {
-                        aldigha();
-                    }
-                    if (event.getX() - xClickOffset < -40)// solgha surulgenni
-                    {
-                        Next();
-                    }
-                    if (event.getX()-xClickOffset<40 &&event.getX()-xClickOffset>-40)
-                    {
-                        player(a);
-                    }
-
-                }
-                return true;
-            }
-
-        });*/
-
         ibsan.setOnTouchListener(new ImageButton.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -236,6 +199,13 @@ public class Lev2MembacaDenganPola extends Activity {
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         btgb.startAnimation(animasihuruf2);
+    }
+    public void btsemua(View view)
+    {
+        Intent intent = new Intent(Lev2MembacaDenganPola.this, com.bimbel.alnabil.level2.Lev2MembacaSemuaPola.class);
+        startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        bt.startAnimation(animasihuruf2);
     }
     public void Next() {
         a++;

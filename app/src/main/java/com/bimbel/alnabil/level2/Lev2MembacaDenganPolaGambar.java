@@ -24,7 +24,7 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
     private int a = 0;
     private lazim lzm = new lazim();
     private lazim kata = new lazim();
-    private ImageView btgb;
+    private ImageView btgb,bt;
     private ImageButton bckata1;
     private ImageButton bckata2;
     private ImageButton halighan;
@@ -182,6 +182,13 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         btgb.startAnimation(animasihuruf2);
+    }
+    public void btsemua(View view)
+    {
+        Intent intent = new Intent(Lev2MembacaDenganPolaGambar.this, com.bimbel.alnabil.level2.Lev2MembacaSemuaPola.class);
+        startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        bt.startAnimation(animasihuruf2);
     }
 
     public void Next() {

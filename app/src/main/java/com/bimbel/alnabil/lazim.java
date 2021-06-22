@@ -26,6 +26,9 @@ public class lazim {
             R.raw.elang,
             R.raw.orangu
     };
+    public int[] belajarduasukukata = {
+            R.raw.belajarduasukukata
+    };
     public int[] musikkata1 = {
             R.raw.ku,
             R.raw.i,

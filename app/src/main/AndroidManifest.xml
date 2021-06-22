@@ -31,6 +31,9 @@
             android:name=".level2.Lev2MembacaDenganPolaGambar"
             android:screenOrientation="landscape" />
         <activity
+            android:name=".level2.Lev2MembacaSemuaPola"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".MengenalWarna"
             android:screenOrientation="landscape" />
         <activity

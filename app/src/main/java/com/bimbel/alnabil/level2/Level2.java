@@ -5,21 +5,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.media.MediaPlayer;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bimbel.alnabil.ActivitLevel;
 import com.bimbel.alnabil.R;
+import com.bimbel.alnabil.lazim;
 
 public class Level2 extends AppCompatActivity {
-
+    private lazim lzm = new lazim();
     private Button lvl1;
     private Button lvl2;
-    private Button lvl3;
+    private Button lvl3,membacaduasukukata;
+    private MediaPlayer mMediaPlayer;
+    private boolean sound = true;
+    private int xTouch = 0, xClickOffset = 0, xOffset = 0;
     private ImageView homes;
 
 
@@ -38,6 +45,8 @@ public class Level2 extends AppCompatActivity {
         lvl2 = (Button) findViewById(R.id.button2);
         lvl3 = (Button) findViewById(R.id.button3);
         homes = (ImageView) findViewById(R.id.home);
+
+
     }
 
 
@@ -52,6 +61,7 @@ public class Level2 extends AppCompatActivity {
     //untuk membuka aactivity
     public void duasukukata(View view)
     {
+        player3(0);
         Intent intent = new Intent(Level2.this, lev2Membaca2SukuKata.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -73,25 +83,20 @@ public class Level2 extends AppCompatActivity {
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         lvl3.startAnimation(animasihuruf2);
     }
-    public void BelajarLatihanWarna(View view){
-        Intent intent = new Intent(Level2.this, com.bimbel.alnabil.level1.BelajarLatihanWarna.class);
-        startActivity(intent);
+    public void player3(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.belajarduasukukata[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
     }
-    /*public void bukaabout(View view){
-        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-        startActivity(intent);
-    }
-    public void bukahelp (View view){
-        Intent intent = new Intent(MainActivity.this, HelpActivity.class);
-        startActivity(intent);
-    }
-    public void bukahewan(View view){
-        Intent intent = new Intent(MainActivity.this, ActivityHewan.class);
-        startActivity(intent);
-    }
-    public void bukatransportasi(View view){
-        Intent intent = new Intent (MainActivity.this, ActivityTransportasi.class);
-        startActivity(intent);
-    }*/
 
 }
