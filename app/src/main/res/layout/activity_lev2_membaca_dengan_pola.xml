@@ -6,6 +6,25 @@
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     android:orientation="horizontal">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/gambar"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:layout_above="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btgambar"
+        android:src="@drawable/tampilgambar"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_120sdp"        android:layout_above="@+id/card"
+        android:id="@+id/tampilgambar"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tampilangka1"/>
 
     <ImageView
         android:id="@+id/logo"

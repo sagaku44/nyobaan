@@ -6,31 +6,27 @@ import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
 
-import com.bimbel.alnabil.ActivitLevel;
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
-import com.bimbel.alnabil.level1.Level1;
 
 import java.util.Random;
 
-public class Lev2MembacaDenganPola extends Activity {
-    private int a = 0;
+public class Lev2MembacaDenganPolaGambar extends Activity {
     private int b = 0;
+    private int a = 0;
     private lazim lzm = new lazim();
+    private lazim kata = new lazim();
     private ImageView btgb;
-    private ImageButton ibsan;
+    private ImageButton bckata1;
+    private ImageButton bckata2;
     private ImageButton halighan;
     private ImageButton aldinqi;
     private ImageButton kiyinki;
@@ -42,19 +38,16 @@ public class Lev2MembacaDenganPola extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lev2_membaca_dengan_pola);
+        setContentView(R.layout.activity_belajar_baca_2);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        btgb = (ImageView) findViewById(R.id.gambar);
+
+        btgb = (ImageView) findViewById(R.id.tampilgambar);
+
         DisplayMetrics dm = new DisplayMetrics();
         dm = this.getApplicationContext().getResources().getDisplayMetrics();
         int screenWidth = dm.widthPixels;
         int btnWidth=screenWidth/4;
-        //RelativeLayout.LayoutParams mParam = new RelativeLayout.LayoutParams(
-        // RelativeLayout.LayoutParams.FILL_PARENT,
-        // RelativeLayout.LayoutParams.WRAP_CONTENT
-        //);
-
         int barHeight;
 
         if(dm.heightPixels>1000)
@@ -72,38 +65,27 @@ public class Lev2MembacaDenganPola extends Activity {
 
 
         btnWidth=dm.widthPixels  /4;
-        //herpHeight=dm.heightPixels/8;
-        //mParam.width=btnWidth-10;
-        //mParam.height=barHeight+2;
-        //mParam.leftMargin=5;
-        //mParam.rightMargin=5;
+
         halighan = (ImageButton) findViewById(R.id.bt1);
         aldinqi = (ImageButton) findViewById(R.id.bt2);
         kiyinki = (ImageButton) findViewById(R.id.bt3);
 
-        //menu = (ImageButton) findViewById(R.id.bt4);
         home = (ImageButton) findViewById(R.id.bt5);
         halighan.setMaxWidth(btnWidth-5);
 
-        //halighan.setLayoutParams(mParam);
-        //aldinqi.setLayoutParams(mParam);
-        //kiyinki.setLayoutParams(mParam);
-        //menu.setLayoutParams(mParam);
+        bckata1 = (ImageButton) findViewById(R.id.kata1);
 
-        //imview = (ImageView) findViewById(R.id.imvwsan);
-//        mParam=(LinearLayout.LayoutParams)imview.getLayoutParams();
-        //mParam.height=(dm.heightPixels-barHeight-42) * 4/10;
-//        imview.setLayoutParams(mParam);
-        ibsan = (ImageButton) findViewById(R.id.imbtsan);
+        bckata2 = (ImageButton) findViewById(R.id.kata2);
 
-//        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata1.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata2.setBackgroundResource(lzm.gambarbacagambar[a]);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
-        ibsan.startAnimation(animasihuruf2);
+        bckata1.startAnimation(animasihuruf2);
+        bckata2.startAnimation(animasihuruf2);
         home.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
 
-                Intent Intent = new Intent(Lev2MembacaDenganPola.this, Level2.class);
+                Intent Intent = new Intent(Lev2MembacaDenganPolaGambar.this, Level2.class);
                 startActivity(Intent);
 
             }
@@ -135,51 +117,14 @@ public class Lev2MembacaDenganPola extends Activity {
             }
         });
 
-
-        /*menu.setOnClickListener(new ImageButton.OnClickListener() {
-            public void onClick(View v) {
-                BelajarBaca.this.openOptionsMenu();
-
-            }
-        });*/
-
-
-
-       /* imview.setOnTouchListener(new ImageView.OnTouchListener() {
-            public boolean onTouch(View arg0, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    xTouch = (int) event.getX();
-                    xClickOffset = xTouch;
-                } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-                    xOffset += xTouch - (int) event.getX();
-                    xTouch = (int) event.getX();
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    if (event.getX() - xClickOffset > 40)// onggha surulgenni
-                    {
-                        aldigha();
-                    }
-                    if (event.getX() - xClickOffset < -40)// solgha surulgenni
-                    {
-                        Next();
-                    }
-                    if (event.getX()-xClickOffset<40 &&event.getX()-xClickOffset>-40)
-                    {
-                        player(a);
-                    }
-
-                }
-                return true;
-            }
-
-        });*/
-
-        ibsan.setOnTouchListener(new ImageButton.OnTouchListener() {
+        bckata1.setOnTouchListener(new ImageButton.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
                     xClickOffset = xTouch;
                     final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
-                    ibsan.startAnimation(animasihuruf2);
+                    bckata1.startAnimation(animasihuruf2);
+
                 } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     xOffset += xTouch - (int) event.getX();
                     xTouch = (int) event.getX();
@@ -201,13 +146,14 @@ public class Lev2MembacaDenganPola extends Activity {
             }
 
         });
-
-        RelativeLayout layout = new RelativeLayout(this);
-        layout.setOnTouchListener(new RelativeLayout.OnTouchListener() {
+        bckata2.setOnTouchListener(new ImageButton.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
                     xClickOffset = xTouch;
+                    final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+                    bckata2.startAnimation(animasihuruf2);
+
                 } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     xOffset += xTouch - (int) event.getX();
                     xTouch = (int) event.getX();
@@ -220,35 +166,38 @@ public class Lev2MembacaDenganPola extends Activity {
                     {
                         Next();
                     }
-                    if (event.getX()== xClickOffset)
-                    {
-                        player(a);
+                    if (event.getX()-xClickOffset<40 && event.getX()-xClickOffset>-40) {
+                        player2(a);
                     }
                 }
                 return true;
+
             }
 
         });
     }
     public void btgambar(View view)
     {
-        Intent intent = new Intent(Lev2MembacaDenganPola.this, com.bimbel.alnabil.level2.Lev2MembacaDenganPolaGambar.class);
+        Intent intent = new Intent(Lev2MembacaDenganPolaGambar.this, com.bimbel.alnabil.level2.Lev2MembacaDenganPola.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         btgb.startAnimation(animasihuruf2);
     }
+
     public void Next() {
         a++;
         if (a > 4) {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata1.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata2.setBackgroundResource(lzm.gambarbacagambar[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
-        ibsan.startAnimation(animasihuruf);
+        bckata1.startAnimation(animasihuruf);
+        bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         kiyinki.startAnimation(animasihuruf2);
-        player(a);
+        player3(a);
 
     }
 
@@ -259,22 +208,26 @@ public class Lev2MembacaDenganPola extends Activity {
             a = 4;
         }
         //   imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata1.setBackgroundResource(lzm.gambaralfabet[a]);
+        bckata2.setBackgroundResource(lzm.gambarbacagambar[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.left_in);
-        ibsan.startAnimation(animasihuruf);
+        bckata1.startAnimation(animasihuruf);
+        bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         aldinqi.startAnimation(animasihuruf2);
-        player(a);
+        player3(a);
 
     }
 
     public void halighan() {
         int bk = 0;
         Random rndGenerator = new Random();
-        bk = rndGenerator.nextInt(5);
+        bk = rndGenerator.nextInt(1);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
-        ibsan.setBackgroundResource(lzm.gambaralfabet[bk]);
-        player(bk);
+        bckata1.setBackgroundResource(lzm.gambaralfabet[bk]);
+        bckata2.setBackgroundResource(lzm.gambarbacagambar[bk]);
+        player3(bk);
+
         a = bk;
     }
 
@@ -284,7 +237,7 @@ public class Lev2MembacaDenganPola extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPola.this, lzm.musiksaya2[i]);
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.musiksaya2[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {
@@ -293,47 +246,35 @@ public class Lev2MembacaDenganPola extends Activity {
             }
         }
     }
+    public void player2(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
 
-    public boolean onCreateOptionsMenu(Menu menu) {
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.musikkatagambar[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
 
-        //menu.add(0, 1, 1, "Quiz Tebak Angka")
-        //.setIcon(R.drawable.share_icon);
-        menu.add(0, 2, 2, "Matikan/Hidupkan Suara").setIcon(
-                R.drawable.sound);
-
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
-        if (item.getItemId() == 1) {
-            Intent tallash = new Intent();
-            //tallash.setClass(BelajarBaca.this, TebakAngka.class);
-            Lev2MembacaDenganPola.this.startActivity(tallash);
-
-        } else if (item.getItemId() == 2) {
-
-            if (sound == true) {
-
-                Toast toast = new Toast(this);
-                ImageView view = new ImageView(this);
-                view.setImageResource(R.drawable.off);
-                // toast.setGravity(Gravity.NO_GRAVITY,toast.getXOffset()/2,toast.getYOffset()/2);
-                toast.setView(view);
-                toast.show();
-                sound = false;
-            } else {
-                Toast toast = new Toast(this);
-                ImageView view = new ImageView(this);
-                view.setImageResource(R.drawable.on);
-                // toast.setGravity(Gravity.NO_GRAVITY,toast.getXOffset()/2,toast.getYOffset()/2);
-                toast.setView(view);
-                toast.show();
-                sound = true;
+                mMediaPlayer.stop();
             }
         }
-        return true;
+    }
+    public void player3(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.musiksaya2[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
     }
 
 
