@@ -24,7 +24,7 @@ import com.bimbel.alnabil.lazim;
 import java.util.Random;
 
 public class Lev2MengenalAngka510 extends Activity {
-    private int a = 0;
+    private int a = 4;
     private int b = 0;
     private lazim lzm = new lazim();
     private ImageView imview;
@@ -226,7 +226,7 @@ public class Lev2MengenalAngka510 extends Activity {
     public void Next() {
         a++;
         if (a > 9) {
-            a = 0;
+            a = 4;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
@@ -239,7 +239,7 @@ public class Lev2MengenalAngka510 extends Activity {
     public void aldigha() {
 
         a--;
-        if (a < 0) {
+        if (a < 4) {
             a = 9;
         }
         //imview.setBackgroundResource(lzm.gambarsaya2[a]);
@@ -253,7 +253,7 @@ public class Lev2MengenalAngka510 extends Activity {
     public void halighan() {
         int bk = 0;
         Random rndGenerator = new Random();
-        bk = rndGenerator.nextInt(10);
+        bk = rndGenerator.nextInt(5);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
         ibsan.setBackgroundResource(lzm.gambarnumber[bk]);
         player(bk);

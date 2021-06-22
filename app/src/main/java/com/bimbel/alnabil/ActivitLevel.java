@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -21,6 +22,10 @@ public class ActivitLevel extends AppCompatActivity {
 
     private ImageView lev1;
     private ImageView lev2;
+    private lazim lzm = new lazim();
+    private MediaPlayer mMediaPlayer;
+    private boolean sound = true;
+    private int xTouch = 0, xClickOffset = 0, xOffset = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,7 @@ public class ActivitLevel extends AppCompatActivity {
 
     public void Level1(View view)
     {
+        level1(0);
         Intent intent = new Intent(ActivitLevel.this, Level1.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -58,6 +64,7 @@ public class ActivitLevel extends AppCompatActivity {
 
     public void Level2(View view)
     {
+        level2(0);
         Intent intent = new Intent(ActivitLevel.this, Level2.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -89,5 +96,37 @@ public class ActivitLevel extends AppCompatActivity {
                 })
                 .show();
 
+    }
+
+    public void level1(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(ActivitLevel.this, lzm.level1[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+
+    public void level2(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(ActivitLevel.this, lzm.level2[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
     }
 }

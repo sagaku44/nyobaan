@@ -26,9 +26,46 @@ public class lazim {
             R.raw.elang,
             R.raw.orangu
     };
+
+    //aktivity level
+    public int[] level1 = {
+            R.raw.level1
+    };
+    public int[] level2 = {
+            R.raw.level2
+    };
+
+    //buka aktivity level 1
+    public int[] belajarhurufvokal = {
+            R.raw.belajarhurufvokal
+    };
+    public int[] membacasukukataterpisah = {
+            R.raw.membacasukukataterpisah
+    };
+    public int[] belajarangka15 = {
+            R.raw.belajarangka15
+    };
+
+    //buka aktivity level 2
     public int[] belajarduasukukata = {
             R.raw.belajarduasukukata
     };
+    public int[] membacapola = {
+            R.raw.membacapola
+    };
+    public int[] mengenalangka510 = {
+            R.raw.mengenalangka510
+    };
+
+    //Level 2 Belajar Baca
+
+    public int[] membaca_huruf_sesuai_gambar = {
+            R.raw.membaca_huruf_sesuai_gambar
+    };
+    public int[] membaca_semua_huruf_vokal = {
+            R.raw.membaca_semua_huruf_vokal
+    };
+
     public int[] musikkata1 = {
             R.raw.ku,
             R.raw.i,

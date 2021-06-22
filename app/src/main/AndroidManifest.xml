@@ -43,9 +43,6 @@
             android:name=".level1.BelajarBaca"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".level1.BelajarLatihanWarna"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".level1.BelajarHitung"
             android:screenOrientation="landscape" />
         <activity

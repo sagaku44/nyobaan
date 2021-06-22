@@ -61,7 +61,7 @@ public class Level2 extends AppCompatActivity {
     //untuk membuka aactivity
     public void duasukukata(View view)
     {
-        player3(0);
+        player4(0);
         Intent intent = new Intent(Level2.this, lev2Membaca2SukuKata.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -71,6 +71,7 @@ public class Level2 extends AppCompatActivity {
     ///////////////
     public void polaaiueo(View view)
     {
+        player5(0);
         Intent intent = new Intent(Level2.this, Lev2MembacaDenganPola.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -78,18 +79,51 @@ public class Level2 extends AppCompatActivity {
     }
     public void angka510(View view)
     {
+        player6(0);
         Intent intent = new Intent(Level2.this, Lev2MengenalAngka510.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         lvl3.startAnimation(animasihuruf2);
     }
-    public void player3(int i) {
+    public void player4(int i) {
         if (sound == true) {
             if (mMediaPlayer != null) {
                 mMediaPlayer.release();
 
             }
             mMediaPlayer = MediaPlayer.create(Level2.this, lzm.belajarduasukukata[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+
+    public void player5(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.membacapola[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+
+    public void player6(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.mengenalangka510[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

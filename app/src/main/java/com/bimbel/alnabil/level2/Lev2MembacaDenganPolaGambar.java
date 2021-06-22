@@ -16,6 +16,7 @@ import android.widget.ImageView;
 
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
+import com.bimbel.alnabil.level1.Level1;
 
 import java.util.Random;
 
@@ -38,7 +39,7 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_belajar_baca_2);
+        setContentView(R.layout.activity_lev2_belajar_baca_2);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
@@ -178,6 +179,7 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
     }
     public void btgambar(View view)
     {
+        bacadangambar(0);
         Intent intent = new Intent(Lev2MembacaDenganPolaGambar.this, com.bimbel.alnabil.level2.Lev2MembacaDenganPola.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -185,6 +187,7 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
     }
     public void btsemua(View view)
     {
+        membacasemuapola(0);
         Intent intent = new Intent(Lev2MembacaDenganPolaGambar.this, com.bimbel.alnabil.level2.Lev2MembacaSemuaPola.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -275,6 +278,37 @@ public class Lev2MembacaDenganPolaGambar extends Activity {
 
             }
             mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.musiksaya2[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+
+    public void bacadangambar(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.belajarhurufvokal[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+    public void membacasemuapola(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPolaGambar.this, lzm.membaca_semua_huruf_vokal[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

@@ -195,6 +195,7 @@ public class Lev2MembacaDenganPola extends Activity {
     }
     public void btgambar(View view)
     {
+        bacadangambar(0);
         Intent intent = new Intent(Lev2MembacaDenganPola.this, com.bimbel.alnabil.level2.Lev2MembacaDenganPolaGambar.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -202,6 +203,7 @@ public class Lev2MembacaDenganPola extends Activity {
     }
     public void btsemua(View view)
     {
+        membacasemuapola(0);
         Intent intent = new Intent(Lev2MembacaDenganPola.this, com.bimbel.alnabil.level2.Lev2MembacaSemuaPola.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
@@ -304,6 +306,37 @@ public class Lev2MembacaDenganPola extends Activity {
             }
         }
         return true;
+    }
+
+    public void bacadangambar(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPola.this, lzm.membaca_huruf_sesuai_gambar[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+    public void membacasemuapola(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Lev2MembacaDenganPola.this, lzm.membaca_semua_huruf_vokal[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
     }
 
 

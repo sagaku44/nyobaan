@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btsemua"
-        android:src="@drawable/tampilangka1"/>
+        android:src="@drawable/tampilsemua"/>
     <ImageView
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/_120sdp"

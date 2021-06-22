@@ -17,8 +17,6 @@ import android.widget.ImageView;
 import com.bimbel.alnabil.R;
 import com.bimbel.alnabil.lazim;
 
-import java.util.Random;
-
 public class Lev2MembacaSemuaPola extends Activity {
     private int b = 0;
     private int a = 0;
@@ -38,7 +36,7 @@ public class Lev2MembacaSemuaPola extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_belajar_bacaall);
+        setContentView(R.layout.activity_lev2_belajar_bacaall);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
@@ -68,20 +66,20 @@ public class Lev2MembacaSemuaPola extends Activity {
         home = (ImageButton) findViewById(R.id.bt5);
 
         bca = (ImageButton) findViewById(R.id.kataa);
-        bcu = (ImageButton) findViewById(R.id.katai);
-        bci = (ImageButton) findViewById(R.id.katau);
+        bci = (ImageButton) findViewById(R.id.katai);
+        bcu = (ImageButton) findViewById(R.id.katau);
         bce = (ImageButton) findViewById(R.id.katae);
         bco = (ImageButton) findViewById(R.id.katao);
 
         bca.setBackgroundResource(lzm.gambaralfabet[0]);
-        bcu.setBackgroundResource(lzm.gambaralfabet[1]);
-        bci.setBackgroundResource(lzm.gambaralfabet[2]);
+        bci.setBackgroundResource(lzm.gambaralfabet[1]);
+        bcu.setBackgroundResource(lzm.gambaralfabet[2]);
         bce.setBackgroundResource(lzm.gambaralfabet[3]);
         bco.setBackgroundResource(lzm.gambaralfabet[4]);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         bca.startAnimation(animasihuruf2);
-        bcu.startAnimation(animasihuruf2);
         bci.startAnimation(animasihuruf2);
+        bcu.startAnimation(animasihuruf2);
         bce.startAnimation(animasihuruf2);
         bco.startAnimation(animasihuruf2);
         home.setOnClickListener(new ImageButton.OnClickListener() {
@@ -198,6 +196,14 @@ public class Lev2MembacaSemuaPola extends Activity {
             }
 
         });
+    }
+
+    public void btgambar1(View view)
+    {
+        Intent intent = new Intent(Lev2MembacaSemuaPola.this, com.bimbel.alnabil.level2.Lev2MembacaDenganPolaGambar.class);
+        startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        btgb.startAnimation(animasihuruf2);
     }
     public void btgambar(View view)
     {
