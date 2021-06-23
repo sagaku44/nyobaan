@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tampilangka"
+    android:id="@+id/lysantunush"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/gambar"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:layout_above="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btgambar1"
+        android:src="@drawable/tampilgambar"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_120sdp"        android:layout_above="@+id/card"
+        android:id="@+id/tampilgambar"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btgambar"
+        android:src="@drawable/tampilangka1"/>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:background="@drawable/board"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="@dimen/_250sdp">
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/scr_layout"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_15ssp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp">
+
+            <ImageButton
+                android:background="@drawable/a"
+                android:id="@+id/kataa"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scr_layout"
+            android:id="@+id/scr_gambar"
+            android:paddingRight="@dimen/_23ssp"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_65sdp">
+
+            <ImageButton
+                android:background="@drawable/i"
+                android:id="@+id/katai"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/scr_layout1"
+            android:layout_toRightOf="@+id/scr_gambar"
+            android:paddingRight="@dimen/_23ssp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp">
+
+            <ImageButton
+                android:background="@drawable/u"
+                android:id="@+id/katau"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/scr_layout2"
+            android:layout_toRightOf="@+id/scr_layout1"
+            android:paddingRight="@dimen/_23ssp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp">
+
+            <ImageButton
+                android:background="@drawable/e"
+                android:id="@+id/katae"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/scr_layout5"
+            android:layout_toRightOf="@+id/scr_layout2"
+            android:paddingRight="@dimen/_23ssp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp">
+
+            <ImageButton
+                android:background="@drawable/o"
+                android:id="@+id/katao"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kembali"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

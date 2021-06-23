@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tampilangka"
+    android:id="@+id/lysantunush"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/logo2"/>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:background="@drawable/board"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_200sdp">
+
+        <!--<androidx.cardview.widget.CardView
+            app:cardBackgroundColor="?android:attr/textColorSecondaryInverse"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_10sdp"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scr_layout"
+        android:layout_toRightOf="@+id/left"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/huruf_a"
+            android:id="@+id/kata1"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_120sdp" />
+
+        <ImageButton
+
+            android:layout_marginStart="@dimen/_170sdp"
+            android:background="@drawable/huruf_o"
+            android:id="@+id/kata2"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_120sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_toLeftOf="@+id/card"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt2"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/card"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/back2"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kembali"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/bt1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/btnrandom"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/lykontrol"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+
+
+        <ImageButton
+            android:id="@+id/bt4"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </LinearLayout>-->
+
+</RelativeLayout>
