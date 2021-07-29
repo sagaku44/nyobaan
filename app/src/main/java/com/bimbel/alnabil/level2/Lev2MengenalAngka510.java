@@ -95,7 +95,8 @@ public class Lev2MengenalAngka510 extends Activity {
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
-
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        ibsan.startAnimation(animasihuruf2);
         home.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
 
@@ -173,6 +174,8 @@ public class Lev2MengenalAngka510 extends Activity {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
                     xClickOffset = xTouch;
+                    final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+                    ibsan.startAnimation(animasihuruf2);
                 } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     xOffset += xTouch - (int) event.getX();
                     xTouch = (int) event.getX();
@@ -233,6 +236,10 @@ public class Lev2MengenalAngka510 extends Activity {
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
         ibsan.startAnimation(animasihuruf);
         player(a);
+        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        ibsan.startAnimation(animasihuruf2);
+        player(a);
 
     }
 
@@ -246,6 +253,9 @@ public class Lev2MengenalAngka510 extends Activity {
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_out);
         ibsan.startAnimation(animasihuruf);
+        player(a);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        aldinqi.startAnimation(animasihuruf2);
         player(a);
 
     }

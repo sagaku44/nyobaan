@@ -95,6 +95,8 @@ public class BelajarHitung extends Activity {
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
         ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
+        ibsan.startAnimation(animasihuruf2);
 
         home.setOnClickListener(new ImageButton.OnClickListener() {
             public void onClick(View v) {
@@ -173,6 +175,8 @@ public class BelajarHitung extends Activity {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     xTouch = (int) event.getX();
                     xClickOffset = xTouch;
+                    final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+                    ibsan.startAnimation(animasihuruf2);
                 } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     xOffset += xTouch - (int) event.getX();
                     xTouch = (int) event.getX();
