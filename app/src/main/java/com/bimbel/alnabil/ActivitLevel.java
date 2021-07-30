@@ -43,15 +43,7 @@ public class ActivitLevel extends AppCompatActivity {
         lev2 = (ImageView) findViewById(R.id.level2);
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exitByBackKey();
 
-            //moveTaskToBack(false);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
 
     public void Level1(View view)
     {
@@ -69,6 +61,17 @@ public class ActivitLevel extends AppCompatActivity {
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
         lev2.startAnimation(animasihuruf2);
+    }
+
+
+    /*public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exitByBackKey();
+
+            //moveTaskToBack(false);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     protected void exitByBackKey() {
@@ -96,7 +99,7 @@ public class ActivitLevel extends AppCompatActivity {
                 })
                 .show();
 
-    }
+    }*/
 
     public void level1(int i) {
         if (sound == true) {
