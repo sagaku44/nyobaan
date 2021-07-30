@@ -64,7 +64,7 @@ public class ActivitLevel extends AppCompatActivity {
     }
 
 
-    /*public boolean onKeyDown(int keyCode, KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             exitByBackKey();
 
@@ -99,7 +99,7 @@ public class ActivitLevel extends AppCompatActivity {
                 })
                 .show();
 
-    }*/
+    }
 
     public void level1(int i) {
         if (sound == true) {
