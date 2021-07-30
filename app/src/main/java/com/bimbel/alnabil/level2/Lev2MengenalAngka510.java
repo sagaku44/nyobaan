@@ -24,7 +24,7 @@ import com.bimbel.alnabil.lazim;
 import java.util.Random;
 
 public class Lev2MengenalAngka510 extends Activity {
-    private int a = 4;
+    private int a = 0;
     private int b = 0;
     private lazim lzm = new lazim();
     private ImageView imview;
@@ -94,7 +94,7 @@ public class Lev2MengenalAngka510 extends Activity {
         ibsan = (ImageButton) findViewById(R.id.imbtsan);
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber1[a]);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         ibsan.startAnimation(animasihuruf2);
         home.setOnClickListener(new ImageButton.OnClickListener() {
@@ -228,15 +228,15 @@ public class Lev2MengenalAngka510 extends Activity {
 
     public void Next() {
         a++;
-        if (a > 9) {
-            a = 4;
+        if (a > 4) {
+            a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber1[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
         ibsan.startAnimation(animasihuruf);
         player(a);
-        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber1[a]);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         ibsan.startAnimation(animasihuruf2);
         player(a);
@@ -246,11 +246,11 @@ public class Lev2MengenalAngka510 extends Activity {
     public void aldigha() {
 
         a--;
-        if (a < 4) {
-            a = 9;
+        if (a < 0) {
+            a = 4;
         }
         //imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        ibsan.setBackgroundResource(lzm.gambarnumber[a]);
+        ibsan.setBackgroundResource(lzm.gambarnumber1[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_out);
         ibsan.startAnimation(animasihuruf);
         player(a);
@@ -265,7 +265,7 @@ public class Lev2MengenalAngka510 extends Activity {
         Random rndGenerator = new Random();
         bk = rndGenerator.nextInt(5);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
-        ibsan.setBackgroundResource(lzm.gambarnumber[bk]);
+        ibsan.setBackgroundResource(lzm.gambarnumber1[bk]);
         player(bk);
         a = bk;
     }
@@ -276,7 +276,7 @@ public class Lev2MengenalAngka510 extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(Lev2MengenalAngka510.this, lzm.musiksaya3[i]);
+            mMediaPlayer = MediaPlayer.create(Lev2MengenalAngka510.this, lzm.musiksaya4[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

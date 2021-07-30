@@ -43,16 +43,6 @@ public class ActivitLevel extends AppCompatActivity {
         lev2 = (ImageView) findViewById(R.id.level2);
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exitByBackKey();
-
-            //moveTaskToBack(false);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
     public void Level1(View view)
     {
         level1(0);
@@ -71,7 +61,46 @@ public class ActivitLevel extends AppCompatActivity {
         lev2.startAnimation(animasihuruf2);
     }
 
-    protected void exitByBackKey() {
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        //Handle the back button
+        if(keyCode == KeyEvent.KEYCODE_BACK) {
+            //Ask the user if they want to quit
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(R.string.quit)
+                    .setMessage(R.string.really_quit)
+                    .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            //Stop the activity
+                            ActivitLevel.this.finish();
+                        }
+
+                    })
+                    .setNegativeButton(R.string.no, null)
+                    .show();
+
+            return true;
+        }
+        else {
+            return super.onKeyDown(keyCode, event);
+        }
+
+    }
+
+    /*public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exitByBackKey();
+
+            //moveTaskToBack(false);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }*/
+    /*protected void exitByBackKey() {
 
         AlertDialog alertbox = new AlertDialog.Builder(this)
                 .setMessage("Ingin keluar dari Aplikasi?")
@@ -96,7 +125,7 @@ public class ActivitLevel extends AppCompatActivity {
                 })
                 .show();
 
-    }
+    }*/
 
     public void level1(int i) {
         if (sound == true) {

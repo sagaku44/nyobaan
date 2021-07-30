@@ -26,4 +26,10 @@
     <color name="y">#FF00FF</color>
     <color name="z">#FFFF00</color>
     <string name="RED">MERAH</string>
+
+    <!--Close Apps -->
+    <string name="quit">Keluar dari Aplikasi ?</string>
+    <string name="really_quit">Yakin ?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
 </resources>

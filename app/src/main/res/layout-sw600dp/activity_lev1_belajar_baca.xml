@@ -8,7 +8,6 @@
     android:layout_width="fill_parent"
     android:orientation="horizontal">
 
-
     <RelativeLayout
         android:id="@+id/card"
         android:background="@drawable/board"
@@ -29,16 +28,15 @@
     <RelativeLayout
         android:id="@+id/scr_layout"
         android:layout_centerInParent="true"
-        android:layout_width="@dimen/_250sdp"
-        android:layout_height="@dimen/_175sdp">
-
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:background="@drawable/huruf_a"
             android:id="@+id/imbtsan"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent" />
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
 
     </RelativeLayout>
 

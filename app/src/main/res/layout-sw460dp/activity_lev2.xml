@@ -40,10 +40,10 @@
             android:layout_marginTop="13dp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/membaca2sukukata"
+            android:background="@drawable/belajarkonsonanplusa"
             android:onClick="duasukukata" />
 
-        <Button
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
@@ -52,21 +52,21 @@
             android:background="@drawable/membacapola"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_below="@+id/button1" />
+            android:layout_below="@+id/button1" />-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
             android:onClick="angka510"
             android:id="@+id/button3"
-            android:background="@drawable/angka510"
+            android:background="@drawable/belajarangka610"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_below="@+id/button2" />
+            android:layout_below="@+id/button1" />
 
 
         <ImageView
-            android:layout_below="@+id/button2"
+            android:layout_below="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_10sdp"

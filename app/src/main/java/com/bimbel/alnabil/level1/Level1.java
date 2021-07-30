@@ -22,6 +22,7 @@ public class Level1 extends AppCompatActivity {
     private Button lvl1;
     private Button lvl2;
     private Button lvl3;
+    private Button lvl4;
     private MediaPlayer mMediaPlayer;
     private boolean sound = true;
     private int xTouch = 0, xClickOffset = 0, xOffset = 0;
@@ -42,6 +43,7 @@ public class Level1 extends AppCompatActivity {
         lvl1 = (Button) findViewById(R.id.button1);
         lvl2 = (Button) findViewById(R.id.button2);
         lvl3 = (Button) findViewById(R.id.button3);
+        lvl4 = (Button) findViewById(R.id.button4);
         homes = (ImageView) findViewById(R.id.home);
     }
 
@@ -64,6 +66,17 @@ public class Level1 extends AppCompatActivity {
         lvl1.startAnimation(animasihuruf2);
 
     }
+
+    public void BelajarAlfabet(View view)
+    {
+        player4(0);
+        Intent intent = new Intent(Level1.this, com.bimbel.alnabil.level1.BelajarAlfabet.class);
+        startActivity(intent);
+        final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
+        lvl1.startAnimation(animasihuruf2);
+
+    }
+
     ///////////////
     public void BelajarHitung(View view)
     {
@@ -123,6 +136,21 @@ public class Level1 extends AppCompatActivity {
 
             }
             mMediaPlayer = MediaPlayer.create(Level1.this, lzm.membacasukukataterpisah[i]);
+            mMediaPlayer.start();
+        } else if (sound == false) {
+            if (mMediaPlayer != null) {
+
+                mMediaPlayer.stop();
+            }
+        }
+    }
+    public void player4(int i) {
+        if (sound == true) {
+            if (mMediaPlayer != null) {
+                mMediaPlayer.release();
+
+            }
+            mMediaPlayer = MediaPlayer.create(Level1.this, lzm.belajarhurufalfabet[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

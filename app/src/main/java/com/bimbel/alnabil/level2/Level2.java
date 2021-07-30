@@ -91,7 +91,7 @@ public class Level2 extends AppCompatActivity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.belajarduasukukata[i]);
+            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.membacankonsonandengana[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {
@@ -123,7 +123,7 @@ public class Level2 extends AppCompatActivity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.mengenalangka510[i]);
+            mMediaPlayer = MediaPlayer.create(Level2.this, lzm.belajarangka610[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {

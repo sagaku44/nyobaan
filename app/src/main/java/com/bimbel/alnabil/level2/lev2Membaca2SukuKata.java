@@ -95,8 +95,8 @@ public class lev2Membaca2SukuKata extends Activity {
         bckata2 = (ImageButton) findViewById(R.id.kata2);
 
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
+        bckata1.setBackgroundResource(lzm.gambarkonsonana1[a]);
+        bckata2.setBackgroundResource(lzm.gambarkonsonana2[a]);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         bckata1.startAnimation(animasihuruf2);
         bckata2.startAnimation(animasihuruf2);
@@ -266,14 +266,14 @@ public class lev2Membaca2SukuKata extends Activity {
             a = 0;
         }
 //        imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
+        bckata1.setBackgroundResource(lzm.gambarkonsonana1[a]);
+        bckata2.setBackgroundResource(lzm.gambarkonsonana2[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.right_in);
         bckata1.startAnimation(animasihuruf);
         bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         kiyinki.startAnimation(animasihuruf2);
-        player3(a);
+        //player3(a);
 
     }
 
@@ -284,14 +284,14 @@ public class lev2Membaca2SukuKata extends Activity {
             a = 4;
         }
         //   imview.setBackgroundResource(lzm.gambarsaya2[a]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[a]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[a]);
+        bckata1.setBackgroundResource(lzm.gambarkonsonana1[a]);
+        bckata2.setBackgroundResource(lzm.gambarkonsonana2[a]);
         final Animation animasihuruf = AnimationUtils.loadAnimation(this,R.anim.left_in);
         bckata1.startAnimation(animasihuruf);
         bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         aldinqi.startAnimation(animasihuruf2);
-        player3(a);
+        //player3(a);
 
     }
 
@@ -300,9 +300,9 @@ public class lev2Membaca2SukuKata extends Activity {
         Random rndGenerator = new Random();
         bk = rndGenerator.nextInt(1);
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
-        bckata1.setBackgroundResource(lzm.gambarbaca1[bk]);
-        bckata2.setBackgroundResource(lzm.gambarbaca2[bk]);
-        player3(bk);
+        bckata1.setBackgroundResource(lzm.gambarkonsonana1[bk]);
+        bckata2.setBackgroundResource(lzm.gambarkonsonana2[bk]);
+        //player3(bk);
 
         a = bk;
     }
@@ -313,7 +313,7 @@ public class lev2Membaca2SukuKata extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(lev2Membaca2SukuKata.this, lzm.musikkata1[i]);
+            mMediaPlayer = MediaPlayer.create(lev2Membaca2SukuKata.this, lzm.suarakonsonana1[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {
@@ -328,7 +328,7 @@ public class lev2Membaca2SukuKata extends Activity {
                 mMediaPlayer.release();
 
             }
-            mMediaPlayer = MediaPlayer.create(lev2Membaca2SukuKata.this, lzm.musikkata2[i]);
+            mMediaPlayer = MediaPlayer.create(lev2Membaca2SukuKata.this, lzm.suarakonsonana2[i]);
             mMediaPlayer.start();
         } else if (sound == false) {
             if (mMediaPlayer != null) {
@@ -337,7 +337,7 @@ public class lev2Membaca2SukuKata extends Activity {
             }
         }
     }
-    public void player3(int i) {
+    /*public void player3(int i) {
         if (sound == true) {
             if (mMediaPlayer != null) {
                 mMediaPlayer.release();
@@ -351,7 +351,7 @@ public class lev2Membaca2SukuKata extends Activity {
                 mMediaPlayer.stop();
             }
         }
-    }
+    }*/
 /*
     public boolean onCreateOptionsMenu(Menu menu) {
 

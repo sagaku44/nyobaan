@@ -33,9 +33,7 @@
         <activity
             android:name=".level2.Lev2MembacaSemuaPola"
             android:screenOrientation="landscape" />
-        <activity
-            android:name=".MengenalWarna"
-            android:screenOrientation="landscape" />
+
         <activity
             android:name=".level1.Belajarsatukata"
             android:screenOrientation="landscape" />
@@ -44,6 +42,9 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".level1.BelajarHitung"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".level1.BelajarAlfabet"
             android:screenOrientation="landscape" />
         <activity
             android:name=".level2.Level2"

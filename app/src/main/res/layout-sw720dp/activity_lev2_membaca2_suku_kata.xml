@@ -24,6 +24,58 @@
         android:layout_width="@dimen/_350sdp"
         android:layout_height="@dimen/_250sdp">
 
+        <RelativeLayout
+            android:id="@+id/scr_layout"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UnknownIdInLayout">
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:background="@drawable/ba"
+                    android:id="@+id/kata1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:background="@drawable/spasi"
+                    android:id="@+id/spasi"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:background="@drawable/ca"
+                    android:id="@+id/kata2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
         <!--<androidx.cardview.widget.CardView
             android:layout_centerInParent="true"
             app:cardBackgroundColor="?android:attr/textColorSecondaryInverse"
@@ -34,30 +86,7 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/scr_layout"
-        android:layout_toRightOf="@+id/left"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="UnknownIdInLayout">
 
-        <ImageButton
-            android:layout_marginStart="@dimen/_1sdp"
-            android:background="@drawable/a"
-            android:id="@+id/kata1"
-            android:layout_height="@dimen/_100sdp"
-            android:layout_width="@dimen/_120sdp" />
-
-        <ImageButton
-
-            android:layout_marginStart="@dimen/_61sdp"
-            android:background="@drawable/ku"
-            android:id="@+id/kata2"
-            android:layout_height="@dimen/_100sdp"
-            android:layout_width="@dimen/_120sdp" />
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:paddingStart="@dimen/_55sdp"

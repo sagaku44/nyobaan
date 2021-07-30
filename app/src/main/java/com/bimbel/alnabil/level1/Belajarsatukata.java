@@ -273,7 +273,7 @@ public class Belajarsatukata extends Activity {
         bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         kiyinki.startAnimation(animasihuruf2);
-        player3(a);
+        //player3(a);
 
     }
 
@@ -291,7 +291,7 @@ public class Belajarsatukata extends Activity {
         bckata2.startAnimation(animasihuruf);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(this,R.anim.bounce);
         aldinqi.startAnimation(animasihuruf2);
-        player3(a);
+        //player3(a);
 
     }
 
@@ -302,7 +302,7 @@ public class Belajarsatukata extends Activity {
 //        imview.setBackgroundResource(lzm.gambarsaya2[bk]);
         bckata1.setBackgroundResource(lzm.gambarbaca1[bk]);
         bckata2.setBackgroundResource(lzm.gambarbaca2[bk]);
-        player3(bk);
+        //player3(bk);
 
         a = bk;
     }
@@ -337,7 +337,7 @@ public class Belajarsatukata extends Activity {
             }
         }
     }
-    public void player3(int i) {
+    /*public void player3(int i) {
         if (sound == true) {
             if (mMediaPlayer != null) {
                 mMediaPlayer.release();
@@ -351,7 +351,7 @@ public class Belajarsatukata extends Activity {
                 mMediaPlayer.stop();
             }
         }
-    }
+    }*/
 /*
     public boolean onCreateOptionsMenu(Menu menu) {
 

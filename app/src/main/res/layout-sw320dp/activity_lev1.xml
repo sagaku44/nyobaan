@@ -42,6 +42,18 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/vokal"
             android:onClick="BelajarBaca" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:onClick="BelajarAlfabet"
+            android:id="@+id/button4"
+            android:background="@drawable/belajaralfabet"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/button1" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +63,7 @@
             android:background="@drawable/sukukata"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_below="@+id/button1" />
+            android:layout_below="@+id/button4" />
 
         <Button
             android:layout_width="wrap_content"
@@ -64,24 +76,24 @@
             android:layout_gravity="center"
             android:layout_below="@+id/button3" />
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="BelajarLatihanWarna"
-        android:id="@+id/button3"
-        android:layout_margin="@dimen/_10sdp"
-        android:background="@drawable/btn3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center" />-->
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="BelajarLatihanWarna"
+            android:id="@+id/button3"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn3"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />-->
 
-    <ImageView
-        android:layout_below="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp"
-        android:src="@drawable/pcbwh"
-        android:layout_gravity="center" />
+        <ImageView
+            android:layout_below="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/pcbwh"
+            android:layout_gravity="center" />
 
     </RelativeLayout>
 
