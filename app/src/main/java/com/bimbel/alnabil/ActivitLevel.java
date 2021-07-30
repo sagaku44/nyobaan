@@ -45,7 +45,7 @@ public class ActivitLevel extends AppCompatActivity {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exitByBackKey();
+            onBackPressed();
 
             //moveTaskToBack(false);
             return true;
@@ -71,31 +71,25 @@ public class ActivitLevel extends AppCompatActivity {
         lev2.startAnimation(animasihuruf2);
     }
 
-    protected void exitByBackKey() {
-
-        AlertDialog alertbox = new AlertDialog.Builder(this)
-                .setMessage("Ingin keluar dari Aplikasi?")
-                .setPositiveButton("YA", new DialogInterface.OnClickListener() {
-                    //membuat tombol pilihan
-                    // do something when the button is clicked
-                    public void onClick(DialogInterface arg0, int arg1) {
-
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(R.mipmap.ic_launcher)
+                .setTitle(R.string.app_name)
+                .setMessage("Kamu yakin ingin keluar?")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
                         finish();
-                        //close();
-                        //tutup
-
-
                     }
                 })
-                .setNegativeButton("TIDAK", new DialogInterface.OnClickListener() {
-
-                    // do something when the button is clicked
-                    //saat tombol di klik
-                    public void onClick(DialogInterface arg0, int arg1) {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
                     }
                 })
                 .show();
-
     }
 
     public void level1(int i) {
