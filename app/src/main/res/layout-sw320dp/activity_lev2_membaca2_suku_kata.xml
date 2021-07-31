@@ -41,8 +41,8 @@
                 <ImageButton
                     android:background="@drawable/ba"
                     android:id="@+id/kata1"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_width="@dimen/_120sdp" />
 
             </RelativeLayout>
 
@@ -54,13 +54,13 @@
                 <ImageButton
                     android:background="@drawable/spasi"
                     android:id="@+id/spasi"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_60sdp" />
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_centerInParent="true"
                 android:layout_alignParentEnd="true"
                 android:layout_width="wrap_content"
@@ -69,8 +69,8 @@
                 <ImageButton
                     android:background="@drawable/ca"
                     android:id="@+id/kata2"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_width="@dimen/_120sdp" />
 
             </RelativeLayout>
 
@@ -89,7 +89,7 @@
 
 
     <RelativeLayout
-        android:paddingStart="@dimen/_55sdp"
+        android:paddingStart="@dimen/_15sdp"
         android:padding="@dimen/_10sdp"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
@@ -105,7 +105,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:paddingEnd="@dimen/_50sdp"
+        android:paddingEnd="@dimen/_10sdp"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
