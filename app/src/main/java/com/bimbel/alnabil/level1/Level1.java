@@ -73,7 +73,7 @@ public class Level1 extends AppCompatActivity {
         Intent intent = new Intent(Level1.this, com.bimbel.alnabil.level1.BelajarAlfabet.class);
         startActivity(intent);
         final Animation animasihuruf2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.bounce);
-        lvl1.startAnimation(animasihuruf2);
+        lvl4.startAnimation(animasihuruf2);
 
     }
 

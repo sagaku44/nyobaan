@@ -47,13 +47,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
-            android:onClick="BelajarAlfabet"
             android:id="@+id/button4"
             android:background="@drawable/belajaralfabet"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_below="@+id/button1" />
-
+            android:layout_below="@+id/button1"
+            android:onClick="BelajarAlfabet"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
